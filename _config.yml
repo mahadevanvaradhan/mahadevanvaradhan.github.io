@@ -1,5 +1,5 @@
 # Site settings
-title: Head of Dats Engineering & AI | Data Architect | Google Cloud Professional Architect | Business Intelligence Consultant | Data Modeller
+title: Head of Data Engineering & AI | Data Architect | Google Cloud Professional Architect | Business Intelligence Consultant | Data Modeller
 email: mahadevan.varadhan@gmail.com
 name: Mahadevan Varadhan
 
@@ -9,18 +9,16 @@ markdown: kramdown
 #User specific content
 #Links that will appear in the navbar
 primarylinks:
- - title: Blog
-   url: https://automateddeveloper.blogspot.com/
- - title: GitHub
-   url: https://github.com/robhinds
- - title: StackOverflow
-   url: https://stackoverflow.com/users/258813/rhinds
- - title: DZone
-   url: https://dzone.com/users/899489/rhinds.html
+ - title: My Blog
+   url: https://cloudmerge.org/
+ - title: Git Lab
+   url: https://gitlab.com/rvmahadevan
  - title: LinkedIn
-   url: https://www.linkedin.com/pub/rob-hinds/21/361/3b1
- - title: Food
-   url: https://www.robbishfood.com/
+   url: https://www.linkedin.com/in/mahadevan-varadhan/
+ - title: Google Blog 1
+   url: http://mahadevanrv.blogspot.com/
+ - title: Google Blog 2
+   url: https://mahacloudmerge.blogspot.com/
 
 #Any buzzword skills you want to include
 skills:
