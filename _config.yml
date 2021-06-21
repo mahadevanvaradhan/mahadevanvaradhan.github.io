@@ -87,12 +87,12 @@ roles:
    employer: EC Group Data Soft
    description: Involved in analyzing client databases, designing new data warehouse, planning and developing SSIS packages, SSRS reports, SSAS Cubes and creating dashboards using SSRS and performance Point Server 2007. Worked mostly in resource management. finance, sales and Helpdesk domains.
 
-# #Education is required
-# education:
-#  - level: Master of Science (M.Sc.)
-#    date: 2003
-#    subject: Chemistry
-#    school: University of Madras
+#Education is required
+education:
+ - level: Master of Science (M.Sc.)
+   date: 2003
+   subject: Chemistry
+   school: University of Madras
 
 # #This section is optional (as is the image link below)
 # coursera:
@@ -119,9 +119,9 @@ roles:
 #       speakerdeckId: ec84f2f56e9743afb0675b1eeeb6b6ce
 #       conference: W-JAX Conference, Munich 2017 (London 2017)
 
-# #List of interesting Github repo/projects to include - optional
-# github:
-#  - mahadevanvaradhan/aws-glue-demo
+#List of interesting Github repo/projects to include - optional
+github:
+ - mahadevanvaradhan/aws-glue-demo
 
 # #Stackoverflow flair is optional
 # stackoverflow:
