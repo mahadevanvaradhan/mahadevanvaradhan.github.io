@@ -56,34 +56,34 @@ skills:
 #Work experience is required
 roles:
  - title: Head of Data Engineering
-   start: Jan 2019
-   end: Ongoing
+   start: 2019 - till date
+  #  end: Ongoing
    employer: Learnship
    description: Managing all data products development, data warehouse, business intelligence and artificial intelligence teams. Work across all product owners and get the business needs and help them by delivering quality report. Platform - AWS Cloud services, Python, Airflow, AWS Redshift, Power BI, Google NLP, REST Api, Recommendation Services.
  - title: Senior Data Architect
-   start: May 2016
-   end: Jan 2019
+   start: 2016 - 2019
+  #  end: Jan 2019
    employer: News Technologies (News Corp)
    description: Managed data engineering and data science teams. Responsible for designing and architecting data processing. Worked in Google Cloud services, NLP, Python, Airflow, AWS Redshift, Tableau, and Data Studio.
  - title: Technology Specialist
-   start: March 2015
-   end: April 2016
+   start: 2015 - 2016
+  #  end: April 2016
    employer: Pearson English Business Solutions
    description: Worked as a project manager for Data Warehouse and Business Intelligence developments. Worked in MSBI tools, AWS Redshift, Tableau, and Talend Big Data.
  - title: Lead - Data Warehouse
-   start: July 2012
-   end: March 2015
+   start: 2012 - 2015
+  #  end: March 2015
    employer: GlobalEnglish
    description: Lead developer in designing data model, data warehouse and creating data pipelines and reports using SSIS, SSRS, and SSAS data tools.
  - title: Business Intelligence Analyst
-   start: June 2011
-   end: July 2012
-   employer: GlobalEnglish
+   start: 2011 - 2012
+  #  end: July 2012
+   employer: EC Group Datasoft
    description: Lead BI team to accomplish task in time with quality. Responsible for gathering requirements from client, analyzing, planning, and data modelling.
    Developing and reviewing SSIS packages.
  - title: Associate BI Consultant
-   start: July 2007
-   end: May 2011
+   start: 2007 - 2011
+  #  end: May 2011
    employer: Congruent Info-tech
    description: Involved in analyzing client databases, designing new data warehouse, planning and developing SSIS packages, SSRS reports, SSAS Cubes and creating dashboards using SSRS and performance Point Server 2007. <br/> Worked mostly in resource management, finance, sales and Helpdesk domains.
 
