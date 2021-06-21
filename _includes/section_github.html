@@ -5,7 +5,7 @@
 		</div>
 		<div class="content-rounded-panel" style="overflow: hidden;">
 			<div>
-				{% for project in site.gitlab %}
+				{% for project in site.github %}
 					{% assign loopindex = forloop.index | modulo: 2 %}
 					{% if loopindex == 1 %}
 					<div class="row">
