@@ -75,13 +75,13 @@ roles:
    end: March 2015
    employer: GlobalEnglish
    description: Lead developer in designing data model, data warehouse and creating data pipelines and reports using SSIS, SSRS, and SSAS data tools.
-  - title: Business Intelligence Analyst
+ - title: Business Intelligence Analyst
    start: June 2011
    end: July 2012
    employer: GlobalEnglish
    description: Lead BI team to accomplish task in time with quality. Responsible for gathering requirements from client, analyzing, planning, and data modelling.
-Developing and reviewing SSIS packages.
-   - title: Associate BI Consultant
+   Developing and reviewing SSIS packages.
+ - title: Associate BI Consultant
    start: July 2007
    end: May 2011
    employer: EC Group Data Soft
