@@ -22,24 +22,36 @@ primarylinks:
 
 #Any buzzword skills you want to include
 skills:
- - Scala
- - Akka-http
+ - SQL Server
+ - Data Warehouse
+ - Redshift
  - Microservices
- - Slick
+ - Bigquery
  - Product management
- - API design
- - Groovy
- - Spring MVC/Boot/Social
- - Gradle
- - Java
- - JPA
- - SQL
- - REST
- - Technical Architecture
- - Machine learning
+ - Agile Methodology
+ - Data Processing
+ - Python
+ - REST API
+ - Django Framework
+ - Flask
+ - Power BI
+ - Tableau
+ - Data Studio
+ - SSAS
+ - SSIS
+ - SSRS
+ - Data Architecture
+ - Machine Learning
+ - NLP
+ - Data Modelling
+ - AWS Personalization
+ - Google Dataflow
+ - Google Dataproc
+ - Bigdata
+ - Hive
 
 #Blogfeed is optional - including this will add JS to call the feed and populate blog list
-blogfeed: https://automateddeveloper.blogspot.com/feeds/posts/default?alt=json
+blogfeed: https://cloudmerge.org/feeds/posts/default?alt=json
 
 #Work experience is required
 roles:
@@ -116,10 +128,10 @@ intro:
   I am also involved in developing machine learning models including recommendation engine and prediction. <br/>
   I also manage DW/BI team and all data products development involving NLP, AI and machine learning.<br/>
 #An additional info freetext section is optional at the bottom of the page - can be text or HTML
-additionalinfo: |
-   <strong>SQL</strong>: Working with SQL queries throughout my career. Good experience in writing complex queries, stored procedures, function and views.<br/>
+additionalinfo: 
+   <strong>SQL</strong>: Having good hands-on experience with SQL queries. Can write complex queries, stored procedures, functions and views that required for applications, reports and analytics.<br/>
    <strong>Python</strong>: Using Python I developed many data pipelines with Airflow, Dataflow, AWS Glue. Good in Panda and Pyspark. Worked in contributing to Flask and Djangio API's developments.<br/>
-   <strong>NLP</strong>Stromng knowledge in NLP and NLP api's. Has used Google NLP services and opensources like NLTK, Hugging Face transformesrs and as well as OpenAI for NLP developments. Has built successful News API product with NLP features.<br/>
+   <strong>NLP</strong>Strong knowledge in NLP and NLP api's. Has used Google NLP services and opensources like NLTK, Hugging Face transformesrs and as well as OpenAI for NLP developments. Has built successful News API product with NLP features.<br/>
    <strong>Cloud platforms</strong>: Has experience working with different cloud environments and their database services. have knowledge in AWS, Google Cloud  and Azure cloud services.<br/>
    <strong>API Development</strong>: Has contributed in API developments using Flask and Django framework. Has knowledge in GraphQL.
    <strong>Machine Learning</strong>: Built recomendation models on content recommendation based on learner preference. Has worked on churn prediction with user experience and feedback.
