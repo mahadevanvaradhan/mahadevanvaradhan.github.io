@@ -1,0 +1,155 @@
+# Site settings
+title: Head of Dats Engineering & AI | Data Architect | Google Cloud Professional Architect | Business Intelligence Consultant | Data Modeller
+emil: mahadevan.varadhan@gmail.com
+cell: 9884531666
+name: Mahadevan Varadhan
+
+# Build settings
+markdown: kramdown
+
+#User specific content
+#Links that will appear in the navbar
+primarylinks:
+ - title: My Blog
+   url: https://cloudmerge.org/
+ - title: Git Lab
+   url: https://gitlab.com/rvmahadevan
+ - title: LinkedIn
+   url: https://www.linkedin.com/in/mahadevan-varadhan/
+ - title: Google Blog 1
+   url: http://mahadevanrv.blogspot.com/
+ - title: Google Blog 2
+   url: https://mahacloudmerge.blogspot.com/
+ 
+
+#Any buzzword skills you want to include
+skills:
+ - SQL Server
+ - Data Warehouse
+ - Redshift
+ - Microservices
+ - Bigquery
+ - Product management
+ - Agile Methodology
+ - Data Processing
+ - Python
+ - REST API
+ - Django Framework
+ - Flask
+ - Power BI
+ - Tableau
+ - Data Studio
+ - SSAS
+ - SSIS
+ - SSRS
+ - Data Architecture
+ - Machine Learning
+ - NLP
+ - Data Modelling
+ - AWS Personalization
+ - Google Dataflow
+ - Google Dataproc
+ - Bigdata
+ - Hive
+
+#Blogfeed is optional - including this will add JS to call the feed and populate blog list
+blogfeed: https://cloudmerge.org/
+
+#Work experience is required
+roles:
+ - title: Head of Data Engineering
+   start: Jan 2019
+   end: Ongoing
+   employer: Learnship
+   description: Managing all data products development, data warehouse, business intelligence and artificial intelligence teams. Work across all product owners and get the business needs and help them by delivering quality report. Platform - AWS Cloud services, Python, Airflow, AWS Redshift, Power BI, Google NLP, REST Api, Recommendation Services.
+ - title: Senior Data Architect
+   start: May 2016
+   end: Jan 2019
+   employer: News Technologies (News Corp)
+   description: Managed data engineering and data science teams. Responsible for designing and architecting data processing. Worked in Google Cloud services, NLP, Python, Airflow, AWS Redshift, Tableau, and Data Studio.
+ - title: Technology Specialist
+   start: March 2015
+   end: April 2016
+   employer: Pearson English Business Solutions
+   description: Worked as a project manager for Data Warehouse and Business Intelligence developments. Worked in MSBI tools, AWS Redshift, Tableau, and Talend Big Data.
+ - title: Lead - Data Warehouse
+   start: July 2012
+   end: March 2015
+   employer: GlobalEnglish
+   description: Lead developer in designing data model, data warehouse and creating data pipelines and reports using SSIS, SSRS, and SSAS data tools.
+
+#Education is required
+education:
+ - level: Master of Science (M.Sc.)
+   date: 2003
+   subject: Chemistry
+   school: University of Madras
+
+#This section is optional (as is the image link below)
+courses:
+   courses:
+    - title: Six Sigma Green Belt
+      link: https://ge-ls.udemy.com/certificate/UC-48d7e84a-60e6-4d78-bed3-5dc21c6b62fa/
+      optionalimage: https://img-c.udemycdn.com/course/480x270/2103578_46ae_6.jpg
+      date: June 2021
+    - title: PMP® Certification Training Course
+      link: https://certificates.simplicdn.net/share/2451312.pdf
+      optionalimage: https://media-exp1.licdn.com/dms/image/C510BAQEvNU0EYy6wUw/company-logo_200_200/0/1519868894445?e=1632355200&v=beta&t=18A7khvY6SGB6baNXl4BuataXeDWa1hg3GmkFTQsjBI
+      date: May 2021
+    - title: Data Science Workshop
+      link: https://greyatom.com/certificates/GA-1GIWPM2UK
+      optionalimage: https://demo4.greyatom.com/static/assets/images/temp/site-images/logo/greyatom-logo.svg
+      date: Sep 2020
+
+#This section is optional - embeds slideshows from speakerdeck
+# to get the speakerdeck ID copy the embed code and look for the data-it attribute
+certification:
+   certificates:
+    - title: Google Cloud Profession Architect
+      link: https://www.credential.net/d293c356-ac6b-402c-8882-4347db13cdb0
+      date: June 2020
+    - title: M101P: MongoDB for Developers
+      link: http://university.mongodb.com/course_completion/6f0eb5904fb64ef6a98985bf196873d0
+      date: Aug 2016
+
+#List of interesting Github repo/projects to include - optional
+github:
+ - https://gitlab.com/rvmahadevan/mahadevan.varadhan.io
+ - https://gitlab.com/rvmahadevan/googlenlp
+ - https://gitlab.com/rvmahadevan/elk-mysql-sql
+ - https://gitlab.com/rvmahadevan/credit-lead-prediction
+ - https://gitlab.com/rvmahadevan/jupyter_notebook_datascience
+ - https://gitlab.com/rvmahadevan/quickrecommendation
+ - robhinds/spring-social-stackoverflow
+ - robhinds/genotype
+ - robhinds/footweets
+ - robhinds/ElasticSearchGradle
+
+#Stackoverflow flair is optional
+awards:
+  award:
+   - title: Best Manager of the Year
+     organization: News Technology Service (News UK)
+     year: 2018
+   - title: Best Employee of the Year
+     organization: PearsonEnglish Business Solutions
+     year: 2014
+   - title: Star Performer of the Year
+     organization: PearsonEnglish Business Solutions
+     year: 2013
+
+intro: |
+  I am a data engineer with 16 years experience working in technology. My key technical skill sets are SQL Server BI Tools, Power BI, Redshift, Python, Tableau and Data Studio. <br>
+  I primarily work on developing Data Warehousing, Data Modelling, Data Architecting and contributes toward creating data pipeling and BI reports for business.
+  I am also involved in developing machine learning models including recommendation engine and prediction. 
+  I also manage DW/BI team and all data products development involving NLP, AI and machine learning,
+#An additional info freetext section is optional at the bottom of the page - can be text or HTML
+additionalinfo: |
+   <strong>SQL</strong>: Working with SQL queries throughout my career. Good experience in writing complex queries, stored procedures, function and views.<br/>
+   <strong>Python</strong>: Using Python I developed many data pipelines with Airflow, Dataflow, AWS Glue. Good in Panda and Pyspark. Worked in contributing to Flask and Djangio API's developments.<br/>
+   <strong>NLP</strong>Stromng knowledge in NLP and NLP api's. Has used Google NLP services and opensources like NLTK, Hugging Face transformesrs and as well as OpenAI for NLP developments. Has built successful News API product with NLP features.<br/>
+   <strong>Cloud platforms</strong>: Has experience working with different cloud environments and their database services. have knowledge in AWS, Google Cloud  and Azure cloud services.<br/>
+   <strong>API Development</strong>: Has contributed in API developments using Flask and Django framework. Has knowledge in GraphQL.
+   <strong>Machine Learning</strong>: Built recomendation models on content recommendation based on learner preference. Has worked on churn prediction with user experience and feedback.
+   <strong>Power BI and Tableau</strong>: Worked on delivering many decision making reports and dashboards using Power BI and Tableau visualization tools.
+   In addition to the above key skills, I also worked on many R&D projects using different cloud services and open sources.  
