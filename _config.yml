@@ -84,8 +84,8 @@ roles:
  - title: Associate BI Consultant
    start: July 2007
    end: May 2011
-   employer: EC Group Data Soft
-   description: Involved in analyzing client databases, designing new data warehouse, planning and developing SSIS packages, SSRS reports, SSAS Cubes and creating dashboards using SSRS and performance Point Server 2007. Worked mostly in resource management. finance, sales and Helpdesk domains.
+   employer: Congruent Info-tech
+   description: Involved in analyzing client databases, designing new data warehouse, planning and developing SSIS packages, SSRS reports, SSAS Cubes and creating dashboards using SSRS and performance Point Server 2007. Worked mostly in resource management, finance, sales and Helpdesk domains.
 
 #Education is required
 education:
@@ -120,8 +120,8 @@ education:
 #       conference: W-JAX Conference, Munich 2017 (London 2017)
 
 #List of interesting Github repo/projects to include - optional
-github:
- - mahadevanvaradhan/aws-glue-demo
+# github:
+#  - mahadevanvaradhan/aws-glue-demo
 
 # #Stackoverflow flair is optional
 # stackoverflow:
