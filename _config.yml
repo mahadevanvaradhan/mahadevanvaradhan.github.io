@@ -109,13 +109,8 @@ speakerdeck:
       conference: W-JAX Conference, Munich 2017 (London 2017)
 
 #List of interesting Github repo/projects to include - optional
-gitlab:
- - https://gitlab.com/rvmahadevan/mahadevan.varadhan.io
- - https://gitlab.com/rvmahadevan/googlenlp
- - https://gitlab.com/rvmahadevan/elk-mysql-sql
- - https://gitlab.com/rvmahadevan/credit-lead-prediction
- - https://gitlab.com/rvmahadevan/jupyter_notebook_datascience
- - https://gitlab.com/rvmahadevan/quickrecommendation
+github:
+ - mahadevanvaradhan/aws-glue-demo
 
 #Stackoverflow flair is optional
 stackoverflow:
