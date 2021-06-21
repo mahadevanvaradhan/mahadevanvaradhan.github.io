@@ -50,72 +50,72 @@ skills:
  - Bigdata
  - Hive
 
-#Blogfeed is optional - including this will add JS to call the feed and populate blog list
-blogfeed: http://mahadevanrv.blogspot.com/feeds/posts/default?alt=json
+# #Blogfeed is optional - including this will add JS to call the feed and populate blog list
+# blogfeed: http://mahadevanrv.blogspot.com/feeds/posts/default?alt=json
 
-#Work experience is required
-roles:
- - title: Head of Data Engineering
-   start: Jan 2019
-   end: Ongoing
-   employer: Learnship
-   description: Managing all data products development, data warehouse, business intelligence and artificial intelligence teams. Work across all product owners and get the business needs and help them by delivering quality report. Platform - AWS Cloud services, Python, Airflow, AWS Redshift, Power BI, Google NLP, REST Api, Recommendation Services.
- - title: Senior Data Architect
-   start: May 2016
-   end: Jan 2019
-   employer: News Technologies (News Corp)
-   description: Managed data engineering and data science teams. Responsible for designing and architecting data processing. Worked in Google Cloud services, NLP, Python, Airflow, AWS Redshift, Tableau, and Data Studio.
- - title: Technology Specialist
-   start: March 2015
-   end: April 2016
-   employer: Pearson English Business Solutions
-   description: Worked as a project manager for Data Warehouse and Business Intelligence developments. Worked in MSBI tools, AWS Redshift, Tableau, and Talend Big Data.
- - title: Lead - Data Warehouse
-   start: July 2012
-   end: March 2015
-   employer: GlobalEnglish
-   description: Lead developer in designing data model, data warehouse and creating data pipelines and reports using SSIS, SSRS, and SSAS data tools.
+# #Work experience is required
+# roles:
+#  - title: Head of Data Engineering
+#    start: Jan 2019
+#    end: Ongoing
+#    employer: Learnship
+#    description: Managing all data products development, data warehouse, business intelligence and artificial intelligence teams. Work across all product owners and get the business needs and help them by delivering quality report. Platform - AWS Cloud services, Python, Airflow, AWS Redshift, Power BI, Google NLP, REST Api, Recommendation Services.
+#  - title: Senior Data Architect
+#    start: May 2016
+#    end: Jan 2019
+#    employer: News Technologies (News Corp)
+#    description: Managed data engineering and data science teams. Responsible for designing and architecting data processing. Worked in Google Cloud services, NLP, Python, Airflow, AWS Redshift, Tableau, and Data Studio.
+#  - title: Technology Specialist
+#    start: March 2015
+#    end: April 2016
+#    employer: Pearson English Business Solutions
+#    description: Worked as a project manager for Data Warehouse and Business Intelligence developments. Worked in MSBI tools, AWS Redshift, Tableau, and Talend Big Data.
+#  - title: Lead - Data Warehouse
+#    start: July 2012
+#    end: March 2015
+#    employer: GlobalEnglish
+#    description: Lead developer in designing data model, data warehouse and creating data pipelines and reports using SSIS, SSRS, and SSAS data tools.
 
-#Education is required
-education:
- - level: Master of Science (M.Sc.)
-   date: 2003
-   subject: Chemistry
-   school: University of Madras
+# #Education is required
+# education:
+#  - level: Master of Science (M.Sc.)
+#    date: 2003
+#    subject: Chemistry
+#    school: University of Madras
 
-#This section is optional (as is the image link below)
-coursera:
-   profileurl: https://www.coursera.org/user/i/c6362b4056f755a04bef6a791a62102b
-   courses:
-    - title: Functional Programming Principles in Scala
-      link: https://www.coursera.org/course/progfun
-      optionalimage: https://d1z850dzhxs7de.cloudfront.net/topics/progfun/small-icon.hover.png
-      date: September 16, 2013
-    - title: Algorithms Design and Analysis, Part 1
-      link: https://www.coursera.org/specializations/algorithms
-      optionalimage: https://d1z850dzhxs7de.cloudfront.net/topics/algo/small-icon.hover.png
-      date: April 28, 2014
+# #This section is optional (as is the image link below)
+# coursera:
+#    profileurl: https://www.coursera.org/user/i/c6362b4056f755a04bef6a791a62102b
+#    courses:
+#     - title: Functional Programming Principles in Scala
+#       link: https://www.coursera.org/course/progfun
+#       optionalimage: https://d1z850dzhxs7de.cloudfront.net/topics/progfun/small-icon.hover.png
+#       date: September 16, 2013
+#     - title: Algorithms Design and Analysis, Part 1
+#       link: https://www.coursera.org/specializations/algorithms
+#       optionalimage: https://d1z850dzhxs7de.cloudfront.net/topics/algo/small-icon.hover.png
+#       date: April 28, 2014
 
-#This section is optional - embeds slideshows from speakerdeck
-# to get the speakerdeck ID copy the embed code and look for the data-it attribute
-speakerdeck:
-   profileurl: https://speakerdeck.com/robhinds
-   talks:
-    - title: Product Management for Engineers
-      speakerdeckId: 94f0070c4e434ec79fe9b4eb2cb574e0
-      conference: API Conference, Berlin 2018
-    - title: Agile Machine Learning - from Theory to Production
-      speakerdeckId: ec84f2f56e9743afb0675b1eeeb6b6ce
-      conference: W-JAX Conference, Munich 2017 (London 2017)
+# #This section is optional - embeds slideshows from speakerdeck
+# # to get the speakerdeck ID copy the embed code and look for the data-it attribute
+# speakerdeck:
+#    profileurl: https://speakerdeck.com/robhinds
+#    talks:
+#     - title: Product Management for Engineers
+#       speakerdeckId: 94f0070c4e434ec79fe9b4eb2cb574e0
+#       conference: API Conference, Berlin 2018
+#     - title: Agile Machine Learning - from Theory to Production
+#       speakerdeckId: ec84f2f56e9743afb0675b1eeeb6b6ce
+#       conference: W-JAX Conference, Munich 2017 (London 2017)
 
-#List of interesting Github repo/projects to include - optional
-github:
- - mahadevanvaradhan/aws-glue-demo
+# #List of interesting Github repo/projects to include - optional
+# github:
+#  - mahadevanvaradhan/aws-glue-demo
 
-#Stackoverflow flair is optional
-stackoverflow:
-   profileurl: https://stackoverflow.com/users/258813/rhinds
-   flairimageurl: https://stackoverflow.com/users/flair/258813.png
+# #Stackoverflow flair is optional
+# stackoverflow:
+#    profileurl: https://stackoverflow.com/users/258813/rhinds
+#    flairimageurl: https://stackoverflow.com/users/flair/258813.png
 
 intro: 
   I am a data engineer with 16 years experience working in technology. My key technical skill sets are SQL Server BI Tools, Power BI, Redshift, Python, Tableau and Data Studio. <br/>
@@ -123,12 +123,12 @@ intro:
   I am also involved in developing machine learning models including recommendation engine and prediction. <br/>
   I also manage DW/BI team and all data products development involving NLP, AI and machine learning.<br/>
 #An additional info freetext section is optional at the bottom of the page - can be text or HTML
-additionalinfo: 
-   <strong>SQL</strong>: Having good hands-on experience with SQL queries. Can write complex queries, stored procedures, functions and views that required for applications, reports and analytics.<br/>
-   <strong>Python</strong>: Using Python I developed many data pipelines with Airflow, Dataflow, AWS Glue. Good in Panda and Pyspark. Worked in contributing to Flask and Djangio API's developments.<br/>
-   <strong>NLP</strong>Strong knowledge in NLP and NLP api's. Has used Google NLP services and opensources like NLTK, Hugging Face transformesrs and as well as OpenAI for NLP developments. Has built successful News API product with NLP features.<br/>
-   <strong>Cloud platforms</strong>: Has experience working with different cloud environments and their database services. have knowledge in AWS, Google Cloud  and Azure cloud services.<br/>
-   <strong>API Development</strong>: Has contributed in API developments using Flask and Django framework. Has knowledge in GraphQL.
-   <strong>Machine Learning</strong>: Built recomendation models on content recommendation based on learner preference. Has worked on churn prediction with user experience and feedback.
-   <strong>Power BI and Tableau</strong>: Worked on delivering many decision making reports and dashboards using Power BI and Tableau visualization tools.
-   In addition to the above key skills, I also worked on many R&D projects using different cloud services and open sources.  
+# additionalinfo: 
+#    <strong>SQL</strong>: Having good hands-on experience with SQL queries. Can write complex queries, stored procedures, functions and views that required for applications, reports and analytics.<br/>
+#    <strong>Python</strong>: Using Python I developed many data pipelines with Airflow, Dataflow, AWS Glue. Good in Panda and Pyspark. Worked in contributing to Flask and Djangio API's developments.<br/>
+#    <strong>NLP</strong>Strong knowledge in NLP and NLP api's. Has used Google NLP services and opensources like NLTK, Hugging Face transformesrs and as well as OpenAI for NLP developments. Has built successful News API product with NLP features.<br/>
+#    <strong>Cloud platforms</strong>: Has experience working with different cloud environments and their database services. have knowledge in AWS, Google Cloud  and Azure cloud services.<br/>
+#    <strong>API Development</strong>: Has contributed in API developments using Flask and Django framework. Has knowledge in GraphQL.
+#    <strong>Machine Learning</strong>: Built recomendation models on content recommendation based on learner preference. Has worked on churn prediction with user experience and feedback.
+#    <strong>Power BI and Tableau</strong>: Worked on delivering many decision making reports and dashboards using Power BI and Tableau visualization tools.
+#    In addition to the above key skills, I also worked on many R&D projects using different cloud services and open sources.  
