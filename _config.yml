@@ -85,7 +85,7 @@ roles:
    start: July 2007
    end: May 2011
    employer: Congruent Info-tech
-   description: Involved in analyzing client databases, designing new data warehouse, planning and developing SSIS packages, SSRS reports, SSAS Cubes and creating dashboards using SSRS and performance Point Server 2007. Worked mostly in resource management, finance, sales and Helpdesk domains.
+   description: Involved in analyzing client databases, designing new data warehouse, planning and developing SSIS packages, SSRS reports, SSAS Cubes and creating dashboards using SSRS and performance Point Server 2007. <br/> Worked mostly in resource management, finance, sales and Helpdesk domains.
 
 #Education is required
 education:
