@@ -11,8 +11,8 @@
 								<a href="#" class="timeline-content"  data-toggle="modal" data-target="#{{role.employer | replace: ' ', '_'}}-{{role.title | replace: ' ', '_'}}">
 										<span class="year">{{role.start}}</span>
 										<div class="inner-content">
-												<h4 class="title">{{role.title}}</h4>
-												<h5>{{role.employer}}</h5>
+												<h5 class="title">{{role.title}}</h5>
+												<h6>{{role.employer}}</h6>
 										</div>
 								</a>
 						</div>
@@ -22,8 +22,8 @@
 								<a href="#" class="timeline-content"  data-toggle="modal" data-target="#{{edu.school | replace: '.', '' | replace: ' ', ''}}-{{edu.level | replace: '.', '' | replace: ' ', '' | replace: '(', '' | replace: ')', ''}}">
 										<span class="year">{{edu.date}}</span>
 										<div class="inner-content">
-												<h4 class="title">{{edu.level}}</h4>
-												<h5>{{edu.subject}}</h5>
+												<h5 class="title">{{edu.level}}</h5>
+												<h6>{{edu.subject}}</h6>
 										</div>
 								</a>
 						</div>
