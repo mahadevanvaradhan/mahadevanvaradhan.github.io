@@ -94,57 +94,16 @@ roles:
    employer: Scientific Publishing Service
    description: Responsible for editing and validating Tex & LaTex tagging. Compile and paginating as per the journal style. Worked on TypeSetting Tool testing. Training freshers on Tex and Latex tagging and journal styles.
 
+# https://github.com/robhinds/robhinds.github.io/blob/master/_config.yml
 
-
-#Education is required
-education:
- - level: Master of Science (M.Sc.)
-   date: 2001
-   subject: Chemistry
-   school: University of Madras
-
-# #This section is optional (as is the image link below)
-# coursera:
-#    profileurl: https://www.coursera.org/user/i/c6362b4056f755a04bef6a791a62102b
-#    courses:
-#     - title: Functional Programming Principles in Scala
-#       link: https://www.coursera.org/course/progfun
-#       optionalimage: https://d1z850dzhxs7de.cloudfront.net/topics/progfun/small-icon.hover.png
-#       date: September 16, 2013
-#     - title: Algorithms Design and Analysis, Part 1
-#       link: https://www.coursera.org/specializations/algorithms
-#       optionalimage: https://d1z850dzhxs7de.cloudfront.net/topics/algo/small-icon.hover.png
-#       date: April 28, 2014
-
-# #This section is optional - embeds slideshows from speakerdeck
-# # to get the speakerdeck ID copy the embed code and look for the data-it attribute
-# speakerdeck:
-#    profileurl: https://speakerdeck.com/robhinds
-#    talks:
-#     - title: Product Management for Engineers
-#       speakerdeckId: 94f0070c4e434ec79fe9b4eb2cb574e0
-#       conference: API Conference, Berlin 2018
-#     - title: Agile Machine Learning - from Theory to Production
-#       speakerdeckId: ec84f2f56e9743afb0675b1eeeb6b6ce
-#       conference: W-JAX Conference, Munich 2017 (London 2017)
-
-#List of interesting Github repo/projects to include - optional
-# github:
-#  - mahadevanvaradhan/aws-glue-demo
-
-# #Stackoverflow flair is optional
-# stackoverflow:
-#    profileurl: https://stackoverflow.com/users/258813/rhinds
-#    flairimageurl: https://stackoverflow.com/users/flair/258813.png
-
-intro: 
+intro: |
   I am a data engineer with 16 years experience specialized in Data Warehouse and cloud data engineering in AWS, Google Cloud and Azure Cloud. <br/>
   My key technical skill sets are SQL Server BI Tools, Power BI, Redshift, Python, Tableau and Data Studio. <br/>
   I primarily work on developing Data Warehousing, Data Modelling, Data Architecting and contributes toward creating data pipeling and BI reports for business.<br/>
   I am also involved in developing machine learning models including recommendation engine and prediction. <br/>
   I also manage DW/BI team and all data products development involving NLP, AI and machine learning.<br/>
 #An additional info freetext section is optional at the bottom of the page - can be text or HTML
-additionalinfo: 
+additionalinfo: |
    <strong>SQL</strong>: Having good hands-on experience with SQL queries. Can write complex queries, stored procedures, functions and views that required for applications, reports and analytics.<br/>
    <strong>Python</strong>: Using Python I developed many data pipelines with Airflow, Dataflow, AWS Glue. Good in Panda and Pyspark. Worked in contributing to Flask and Djangio API's developments.<br/>
    <strong>NLP</strong>Strong knowledge in NLP and NLP api's. Has used Google NLP services and opensources like NLTK, Hugging Face transformesrs and as well as OpenAI for NLP developments. Has built successful News API product with NLP features.<br/>
