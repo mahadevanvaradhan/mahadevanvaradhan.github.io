@@ -138,17 +138,18 @@ education:
 #    flairimageurl: https://stackoverflow.com/users/flair/258813.png
 
 intro: 
-  I am a data engineer with 16 years experience working in technology. My key technical skill sets are SQL Server BI Tools, Power BI, Redshift, Python, Tableau and Data Studio. <br/>
+  I am a data engineer with 16 years experience specialized in Data Warehouse and cloud data engineering in AWS, Google Cloud and Azure Cloud. <br/>
+  My key technical skill sets are SQL Server BI Tools, Power BI, Redshift, Python, Tableau and Data Studio. <br/>
   I primarily work on developing Data Warehousing, Data Modelling, Data Architecting and contributes toward creating data pipeling and BI reports for business.<br/>
   I am also involved in developing machine learning models including recommendation engine and prediction. <br/>
   I also manage DW/BI team and all data products development involving NLP, AI and machine learning.<br/>
 #An additional info freetext section is optional at the bottom of the page - can be text or HTML
-# additionalinfo: 
-#    <strong>SQL</strong>: Having good hands-on experience with SQL queries. Can write complex queries, stored procedures, functions and views that required for applications, reports and analytics.<br/>
-#    <strong>Python</strong>: Using Python I developed many data pipelines with Airflow, Dataflow, AWS Glue. Good in Panda and Pyspark. Worked in contributing to Flask and Djangio API's developments.<br/>
-#    <strong>NLP</strong>Strong knowledge in NLP and NLP api's. Has used Google NLP services and opensources like NLTK, Hugging Face transformesrs and as well as OpenAI for NLP developments. Has built successful News API product with NLP features.<br/>
-#    <strong>Cloud platforms</strong>: Has experience working with different cloud environments and their database services. have knowledge in AWS, Google Cloud  and Azure cloud services.<br/>
-#    <strong>API Development</strong>: Has contributed in API developments using Flask and Django framework. Has knowledge in GraphQL.
-#    <strong>Machine Learning</strong>: Built recomendation models on content recommendation based on learner preference. Has worked on churn prediction with user experience and feedback.
-#    <strong>Power BI and Tableau</strong>: Worked on delivering many decision making reports and dashboards using Power BI and Tableau visualization tools.
-#    In addition to the above key skills, I also worked on many R&D projects using different cloud services and open sources.  
+additionalinfo: 
+   <strong>SQL</strong>: Having good hands-on experience with SQL queries. Can write complex queries, stored procedures, functions and views that required for applications, reports and analytics.<br/>
+   <strong>Python</strong>: Using Python I developed many data pipelines with Airflow, Dataflow, AWS Glue. Good in Panda and Pyspark. Worked in contributing to Flask and Djangio API's developments.<br/>
+   <strong>NLP</strong>Strong knowledge in NLP and NLP api's. Has used Google NLP services and opensources like NLTK, Hugging Face transformesrs and as well as OpenAI for NLP developments. Has built successful News API product with NLP features.<br/>
+   <strong>Cloud platforms</strong>: Has experience working with different cloud environments and their database services. have knowledge in AWS, Google Cloud  and Azure cloud services.<br/>
+   <strong>API Development</strong>: Has contributed in API developments using Flask and Django framework. Has knowledge in GraphQL.
+   <strong>Machine Learning</strong>: Built recomendation models on content recommendation based on learner preference. Has worked on churn prediction with user experience and feedback.
+   <strong>Power BI and Tableau</strong>: Worked on delivering many decision making reports and dashboards using Power BI and Tableau visualization tools.
+   In addition to the above key skills, I also worked on many R&D projects using different cloud services and open sources.  
