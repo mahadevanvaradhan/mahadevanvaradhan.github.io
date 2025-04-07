@@ -1,20 +1,208 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahadevan Varadhan - Director of Technology</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 5px solid #3498db;
+        }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: #666;
+        }
+        section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 700;
+        }
+        h2 {
+            color: #1e3c72;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .contact-info a:hover {
+            color: #1e3c72;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        .experience-item, .awards-item {
+            margin-bottom: 25px;
+        }
+        .stars {
+            color: #f39c12;
+            font-size: 1.1rem;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin: 10px 0;
+        }
+        @media (max-width: 768px) {
+            .profile-photo {
+                width: 120px;
+                height: 120px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-photo">Profile Photo Placeholder</div>
+        <h1>Mahadevan Varadhan</h1>
+        <p>Director of Technology | Senior Manager – AI and Data</p>
+    </header>
 
-<div class="row">
-	<div class="col-md-9 rightBorder">
-		{% include section_intro.html %}
-		{% include section_skills.html %}
-		{% include section_workexperience.html %}
-		<!-- {% include section_coursera.html %} -->
-		{% include section_github.html %}
-		<!-- {% include section_mobileapps.html %} -->
-		<!-- {% include section_additionalinfo.html %} -->
-		<!-- {% include section_speakerdeck.html %} -->
-	</div>
-	<div class="col-md-3">
-		<!-- {% include section_stackoverflow.html %} -->
-		<!-- {% include section_blogs.html %} -->
-	</div>
-</div>
+    <div class="container">
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:mahadevan.varadhan@gmail.com">mahadevan.varadhan@gmail.com</a></p>
+            <p>Phone: +91 9884531666</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/mahadevan-varadhan/" target="_blank">Profile</a></p>
+            <p>GitHub: <a href="https://github.com/mahadevanvaradhan" target="_blank">Profile</a></p>
+            <p>Medium: <a href="https://medium.com/@mahadevan.varadhan" target="_blank">Profile</a></p>
+        </section>
+
+        <section class="summary">
+            <h2>About Me</h2>
+            <p>Passionate Data Engineer and AI enthusiast with over 20 years of experience in ETL, Data Modelling, Data Visualization, Business Intelligence, Artificial Intelligence, Gen AI, SQL, and Cloud technologies. I excel in building robust data platforms, creating insightful reports and dashboards using Python, Tableau, and Power BI, and driving innovation through cutting-edge AI solutions.</p>
+        </section>
+
+        <section class="skills">
+            <h2>Key Skills</h2>
+            <div class="skills-grid">
+                <div>
+                    <p><strong>SQL Server/Redshift/BigQuery</strong> <span class="stars">★★★★★★★★☆☆</span></p>
+                    <p><strong>Airflow/Pandas/Python</strong> <span class="stars">★★★★★★★☆☆☆</span></p>
+                    <p><strong>Data Warehouse/Data Lake</strong> <span class="stars">★★★★★★★★☆☆</span></p>
+                </div>
+                <div>
+                    <p><strong>SSIS/SSRS/Data Modelling</strong> <span class="stars">★★★★★★★★☆☆</span></p>
+                    <p><strong>NLP/Tableau/Data Studio</strong> <span class="stars">★★★★★★★☆☆☆</span></p>
+                    <p><strong>GenAI/Prompt Engineering</strong> <span class="stars">★★★★★★★☆☆☆</span></p>
+                </div>
+                <div>
+                    <p><strong>GCP/AWS Cloud/AWS Glue</strong> <span class="stars">★★★★★★☆☆☆☆</span></p>
+                    <p><strong>Tableau/Power BI</strong> <span class="stars">★★★★★★★★☆☆</span></p>
+                    <p><strong>Flask/Django/Fast API</strong> <span class="stars">★★★★★★★★☆☆</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience">
+            <h2>Professional Experience</h2>
+            <div class="experience-item">
+                <h3>Director of Technology</h3>
+                <p>Talentship (Jan 2022 - Present) | Octonomy (Jan 2025 - Present)</p>
+                <ul>
+                    <li>Developed SQL queries for DBT models and built Airflow pipelines for TomTailor; designed and published Tableau reports.</li>
+                    <li>Created data models and provided technical guidance on pipeline and architecture for SoSafe.</li>
+                    <li>Developed Tableau reports for AO in Event Planning, IT Budget Cost, and Governance Board.</li>
+                    <li>Built LLM-based AO Guide bot to extract data from medical books and papers for faculty and students.</li>
+                    <li>Created AO Customer Support Bot using Langchain and Claude LLMs for instant Jira ticket support.</li>
+                    <li>Designed data models and vector embeddings for Octonomy’s knowledge store; worked on prototypes and use cases.</li>
+                    <li>Served as Management Representative for ISO 9001, 27001, and 27701 certifications.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Director of Engineering and Data Platform</h3>
+                <p>Learnship (Apr 2021 – Jan 2022)</p>
+                <ul>
+                    <li>Led migration of legacy products to serverless technologies (AWS Lambda, DynamoDB, Aurora, Personalize, Pinpoint).</li>
+                    <li>Conducted R&D with architects and workshops with Azure/AWS partners for best practices.</li>
+                    <li>Organized hackathons and training programs to upskill teams; introduced reward systems.</li>
+                    <li>Collaborated with global teams and clients; successfully migrated 80% of legacy systems.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Head of Data Engineering</h3>
+                <p>Learnship (Jan 2019 – Apr 2021)</p>
+                <ul>
+                    <li>Architected a global data warehouse post-acquisition using AWS Glue, S3, Redshift, and Power BI.</li>
+                    <li>Designed data flows and implemented near real-time reporting for learners.</li>
+                    <li>Introduced serverless notifications for weekly/monthly progress metrics.</li>
+                    <li>Developed AI News Feed: classified news by difficulty, built recommendation systems, and created dashboards.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Senior Data Architect</h3>
+                <p>News Technology Services (News Corp) (May 2016 – Jan 2019)</p>
+                <ul>
+                    <li>Designed Customer Data Platform (CDP) in AWS Redshift and Airflow; built decision-making reports.</li>
+                    <li>Implemented data governance and anomaly detection; created customer identification system.</li>
+                    <li>Migrated SAS ETL pipelines to Airflow and built data marts in BigQuery.</li>
+                    <li>Architected Editorial Dashboard with Google Analytics, BigQuery, and NLP APIs for real-time insights.</li>
+                    <li>Managed teams to deliver reports and optimize reader flow for editorial content.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <p><strong>Master of Science</strong></p>
+            <p>University of Madras, Chennai</p>
+        </section>
+
+        <section class="awards">
+            <h2>Awards & Certifications</h2>
+            <div class="awards-item">
+                <p><strong>ISO 9001, 27001, 27701 Certifications</strong></p>
+                <p>Played a major role as Management Representative in achieving these certifications at Octonomy.</p>
+            </div>
+            <div class="awards-item">
+                <p><strong>Certifications</strong></p>
+                <p>View full list on <a href="https://www.linkedin.com/in/mahadevan-varadhan/details/certifications/" target="_blank">LinkedIn</a>.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
