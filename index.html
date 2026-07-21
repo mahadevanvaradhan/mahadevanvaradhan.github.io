@@ -3,207 +3,1554 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahadevan Varadhan - Director of Technology</title>
+    <meta name="description" content="Mahadevan Varadhan — Program Delivery & Data Analytics Leader with 20+ years in AI, data, and analytics transformations.">
+    <title>Mahadevan Varadhan | Lead Data & Analytics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --ink: #2a2150;
+            --ink-soft: #4a3f6b;
+            --muted: #6b6288;
+            --line: #e8dff5;
+            --surface: #ffffff;
+            --paper: #ffffff;
+            --accent: #a594f9;
+            --accent-deep: #7c6ad4;
+            --highlight: #f5efff;
+            --lilac: #cdc1ff;
+            --nav-bg: #6367ff;
+            --nav-bg-dark: #4f53d9;
+            --nav-h: 68px;
+            --wrap: 1080px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: calc(var(--nav-h) + 0.75rem);
+        }
+
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f2f5;
-            color: #333;
+            font-family: 'Manrope', sans-serif;
+            color: var(--ink);
+            background: #ffffff;
+            line-height: 1.65;
+            min-height: 100vh;
         }
-        .container {
-            max-width: 1000px;
+
+        a { color: var(--accent); text-decoration: none; transition: color 0.2s ease, opacity 0.2s ease; }
+        a:hover { color: var(--accent-deep); }
+
+        .wrap {
+            max-width: var(--wrap);
             margin: 0 auto;
-            padding: 20px;
+            padding: 0 1.35rem;
         }
-        header {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: white;
-            text-align: center;
-            padding: 3rem 0;
-            border-bottom: 5px solid #3498db;
+
+        /* —— Nav (site chrome) —— */
+        .site-nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 200;
+            height: var(--nav-h);
+            background: var(--nav-bg);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+            transition: background 0.3s ease, box-shadow 0.3s ease;
         }
-        .profile-photo {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background-color: #ccc;
-            margin: 0 auto 1rem;
+
+        .site-nav.is-scrolled {
+            background: var(--nav-bg);
+            box-shadow: 0 8px 28px rgba(99, 103, 255, 0.35);
+        }
+
+        .nav-inner {
+            max-width: var(--wrap);
+            margin: 0 auto;
+            padding: 0 1.35rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .nav-brand {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 1.35rem;
+            color: #ffffff;
+            white-space: nowrap;
+        }
+
+        .nav-brand span { color: #e8e9ff; }
+
+        .nav-links {
+            display: none;
+            list-style: none;
+            gap: 0.1rem;
+            align-items: center;
+        }
+
+        @media (min-width: 980px) {
+            .nav-links { display: flex; }
+        }
+
+        .nav-links a {
+            display: block;
+            padding: 0.4rem 0.55rem;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.88);
+            border-radius: 4px;
+            transition: color 0.2s ease, background 0.2s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.is-active {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.16);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-social {
+            display: none;
+            align-items: center;
+            gap: 0.2rem;
+            list-style: none;
+        }
+
+        @media (min-width: 980px) {
+            .nav-social { display: flex; }
+        }
+
+        .nav-social a {
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
-            color: #666;
+            width: 34px;
+            height: 34px;
+            border-radius: 6px;
+            color: rgba(255, 255, 255, 0.9);
+            transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
         }
-        section {
-            background-color: white;
-            margin: 20px 0;
-            padding: 25px;
+
+        .nav-social a:hover {
+            background: rgba(255, 255, 255, 0.16);
+            color: #ffffff;
+            transform: translateY(-1px);
+        }
+
+        .nav-social svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+
+        .mobile-social {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            padding: 1rem 0.35rem 0.25rem;
+            margin-top: 0.25rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .mobile-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            color: rgba(255, 255, 255, 0.92);
+            border-bottom: none;
+            padding: 0;
         }
-        h1 {
-            margin: 0;
-            font-size: 2.8rem;
+
+        .mobile-social a:hover {
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        .mobile-social svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            font-family: inherit;
+            font-size: 0.8rem;
             font-weight: 700;
+            letter-spacing: 0.03em;
+            padding: 0.55rem 1rem;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
         }
-        h2 {
-            color: #1e3c72;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 8px;
-            margin-bottom: 15px;
-            font-size: 1.8rem;
+
+        .btn:active { transform: translateY(1px); }
+
+        .btn-primary {
+            background: #cdc1ff;
+            color: var(--ink);
         }
-        .contact-info a {
-            color: #3498db;
-            text-decoration: none;
-            transition: color 0.3s;
+
+        .btn-primary:hover {
+            background: #e5d9f2;
+            color: var(--ink);
+            box-shadow: 0 6px 18px rgba(165, 148, 249, 0.4);
         }
-        .contact-info a:hover {
-            color: #1e3c72;
+
+        .nav-actions .btn-primary {
+            background: #ffffff;
+            color: var(--nav-bg);
         }
-        .skills-grid {
+
+        .nav-actions .btn-primary:hover {
+            background: #f0f1ff;
+            color: var(--nav-bg-dark);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+        }
+
+        .nav-actions .btn-outline {
+            background: transparent;
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.55);
+        }
+
+        .nav-actions .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.14);
+            color: #ffffff;
+            box-shadow: none;
+        }
+
+        .btn-ghost {
+            background: transparent;
+            color: var(--ink);
+            border: 1px solid var(--line);
+        }
+
+        .btn-ghost:hover {
+            background: var(--highlight);
+            color: var(--accent-deep);
+        }
+
+        .btn-download {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .btn-download:hover {
+            background: var(--accent-deep);
+            color: #fff;
+            box-shadow: 0 6px 18px rgba(165, 148, 249, 0.35);
+        }
+
+        .btn-outline {
+            background: #ffffff;
+            color: var(--accent-deep);
+            border: 1px solid var(--line);
+        }
+
+        .btn-outline:hover {
+            background: var(--highlight);
+            color: var(--accent-deep);
+            box-shadow: 0 4px 14px rgba(165, 148, 249, 0.2);
+        }
+
+        .download-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.65rem;
+            align-items: center;
+        }
+
+        .footer-downloads {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.65rem;
+        }
+
+        .btn-download:disabled {
+            opacity: 0.65;
+            cursor: wait;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .nav-toggle {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.35rem;
+        }
+
+        @media (min-width: 980px) {
+            .nav-toggle { display: none; }
+        }
+
+        .nav-toggle span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: #ffffff;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .nav-toggle.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+        .nav-toggle.is-open span:nth-child(2) { opacity: 0; }
+        .nav-toggle.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: var(--nav-h);
+            left: 0; right: 0;
+            z-index: 199;
+            background: var(--nav-bg);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+            padding: 0.5rem 1.35rem 1.25rem;
+            animation: slideDown 0.28s ease;
+        }
+
+        .mobile-menu.is-open { display: block; }
+
+        .mobile-menu a {
+            display: block;
+            padding: 0.75rem 0.35rem;
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.92);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .mobile-menu a:last-child { border-bottom: none; }
+
+        /* —— Hero (website landing) —— */
+        .hero {
+            position: relative;
+            min-height: auto;
+            display: flex;
+            align-items: flex-end;
+            padding: calc(var(--nav-h) + 3rem) 0 3.5rem;
+            color: var(--ink);
+            background: #ffffff;
+            border-bottom: 1px solid var(--line);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(165, 148, 249, 0.06) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(165, 148, 249, 0.06) 1px, transparent 1px);
+            background-size: 48px 48px;
+            mask-image: linear-gradient(180deg, rgba(0,0,0,0.35), transparent 90%);
+            pointer-events: none;
+            animation: gridDrift 28s linear infinite;
+        }
+
+        .hero-inner {
+            position: relative;
+            z-index: 1;
+            max-width: var(--wrap);
+            margin: 0 auto;
+            padding: 0 1.35rem;
+            width: 100%;
+            animation: fadeUp 0.8s ease both;
+        }
+
+        .hero-eyebrow {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--accent-deep);
+            margin-bottom: 1rem;
+        }
+
+        .hero h1 {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: clamp(3rem, 8vw, 5rem);
+            font-weight: 400;
+            line-height: 0.98;
+            letter-spacing: -0.025em;
+            margin-bottom: 1rem;
+            max-width: 14ch;
+            color: var(--ink);
+        }
+
+        .hero-lead {
+            font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+            font-weight: 500;
+            color: var(--ink-soft);
+            max-width: 34rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero-sub {
+            font-size: 0.95rem;
+            color: var(--muted);
+            max-width: 36rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-cta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 2.25rem;
+        }
+
+        .hero-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.15rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--line);
+            font-size: 0.88rem;
+        }
+
+        .hero-links a {
+            color: var(--accent-deep);
+            font-weight: 600;
+        }
+
+        .hero-links a:hover { color: var(--accent); }
+
+        /* —— Site bands —— */
+        .band {
+            padding: 4.5rem 0;
+            scroll-margin-top: calc(var(--nav-h) + 0.5rem);
+            background: #ffffff;
+        }
+
+        .band-alt { background: var(--highlight); }
+        .band-tint { background: #faf8fc; }
+        .band-dark {
+            background: #ffffff;
+            color: var(--ink);
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .band-dark .section-label { color: var(--accent-deep); }
+        .band-dark .section-rule { background: var(--accent); }
+        .band-dark .section-intro,
+        .band-dark .summary-text { color: var(--ink-soft); }
+
+        .section-head {
+            margin-bottom: 2rem;
+            max-width: 40rem;
+        }
+
+        .section-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 0.65rem;
+        }
+
+        .section-title {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: clamp(1.85rem, 3.5vw, 2.5rem);
+            font-weight: 400;
+            line-height: 1.15;
+            margin-bottom: 0.65rem;
+        }
+
+        .section-rule {
+            height: 2px;
+            width: 2.75rem;
+            background: var(--accent);
+            margin: 0.85rem 0 1rem;
+            border: none;
+        }
+
+        .section-intro {
+            font-size: 1.02rem;
+            color: var(--ink-soft);
+        }
+
+        .summary-text {
+            font-size: 1.05rem;
+            color: var(--ink-soft);
+            max-width: 48rem;
+            margin-bottom: 1rem;
+        }
+
+        .summary-text:last-child { margin-bottom: 0; }
+
+        /* Reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .reveal.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 { transition-delay: 0.08s; }
+        .reveal-delay-2 { transition-delay: 0.16s; }
+        .reveal-delay-3 { transition-delay: 0.24s; }
+
+        /* Tags */
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.55rem;
+            list-style: none;
+        }
+
+        .tag-list li {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            color: var(--ink-soft);
+            font-size: 0.82rem;
+            font-weight: 600;
+            padding: 0.45rem 0.9rem;
+            transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+        }
+
+        .band-alt .tag-list li { background: #ffffff; }
+
+        .tag-list li:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 14px rgba(15, 28, 46, 0.07);
+        }
+
+        .skills-panel {
+            margin-top: 2.75rem;
+            padding-top: 2.25rem;
+            border-top: 1px solid var(--line);
+        }
+
+        .skills-panel .section-label { margin-bottom: 0.35rem; }
+
+        .skills-panel .section-title {
+            font-size: clamp(1.5rem, 2.8vw, 1.9rem);
+            margin-bottom: 0.5rem;
+        }
+
+        .skills-groups {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 15px;
+            gap: 1.35rem;
+            margin-top: 1.35rem;
         }
-        .experience-item, .awards-item {
-            margin-bottom: 25px;
+
+        @media (min-width: 720px) {
+            .skills-groups { grid-template-columns: 1fr 1fr; }
         }
-        .stars {
-            color: #f39c12;
-            font-size: 1.1rem;
+
+        .skills-group h4 {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 0.55rem;
         }
-        ul {
-            padding-left: 20px;
+
+        /* Certs */
+        .cert-grid {
+            display: grid;
+            gap: 0.85rem;
+            list-style: none;
         }
-        li {
-            margin: 10px 0;
+
+        @media (min-width: 700px) {
+            .cert-grid { grid-template-columns: 1fr 1fr; }
         }
-        @media (max-width: 768px) {
-            .profile-photo {
-                width: 120px;
-                height: 120px;
+
+        .cert-grid li {
+            display: flex;
+            gap: 0.75rem;
+            align-items: flex-start;
+            background: var(--paper);
+            padding: 1.15rem 1.2rem;
+            font-size: 0.92rem;
+            font-weight: 500;
+            border-left: 3px solid var(--accent);
+            box-shadow: 0 1px 0 var(--line);
+            transition: transform 0.25s ease;
+        }
+
+        .cert-grid li:hover { transform: translateY(-3px); }
+        .cert-mark { color: var(--accent); font-weight: 700; flex-shrink: 0; }
+
+        /* Experience timeline */
+        .role {
+            padding: 1.75rem 0;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .role:first-of-type { padding-top: 0; }
+        .role:last-of-type { border-bottom: none; padding-bottom: 0; }
+
+        .role-header {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            margin-bottom: 0.35rem;
+        }
+
+        @media (min-width: 720px) {
+            .role-header {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: baseline;
+                gap: 1rem;
             }
-            h1 {
-                font-size: 2rem;
+        }
+
+        .role-title {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 1.45rem;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        .role-dates {
+            font-size: 0.76rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--muted);
+            white-space: nowrap;
+        }
+
+        .role-company {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--accent-deep);
+            margin-bottom: 0.85rem;
+        }
+
+        .role-blurb {
+            font-size: 0.95rem;
+            color: var(--ink-soft);
+            margin-bottom: 0.9rem;
+            max-width: 48rem;
+        }
+
+        .role-subhead {
+            font-size: 0.74rem;
+            font-weight: 700;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin: 1.1rem 0 0.4rem;
+        }
+
+        .role ul {
+            padding-left: 1.15rem;
+            color: var(--ink-soft);
+            font-size: 0.9rem;
+        }
+
+        .role li { margin: 0.4rem 0; }
+        .role li::marker { color: var(--accent); }
+
+        .earlier-roles {
+            margin-top: 1.5rem;
+            padding: 1.1rem 1.25rem;
+            background: var(--surface);
+            border: 1px solid var(--line);
+            font-size: 0.9rem;
+            color: var(--ink-soft);
+        }
+
+        .earlier-roles strong { color: var(--ink); }
+
+        /* Projects */
+        .project-grid {
+            display: grid;
+            gap: 1.1rem;
+            list-style: none;
+        }
+
+        @media (min-width: 700px) {
+            .project-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (min-width: 980px) {
+            .project-grid { grid-template-columns: 1fr 1fr 1fr; }
+        }
+
+        .project-card {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-top: 3px solid var(--accent);
+            padding: 1.3rem 1.3rem 1.4rem;
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 32px rgba(15, 28, 46, 0.09);
+        }
+
+        .project-card h3 {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 0.4rem;
+        }
+
+        .project-meta {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            font-size: 0.88rem;
+            color: var(--ink-soft);
+        }
+
+        /* Achievements */
+        .two-col {
+            display: grid;
+            gap: 0.9rem;
+            list-style: none;
+        }
+
+        @media (min-width: 700px) {
+            .two-col { grid-template-columns: 1fr 1fr; }
+        }
+
+        .two-col li {
+            background: var(--paper);
+            border-top: 3px solid var(--accent);
+            padding: 1.15rem 1.2rem;
+            font-size: 0.92rem;
+            color: var(--ink-soft);
+            transition: transform 0.25s ease;
+        }
+
+        .band-alt .two-col li { background: #ffffff; }
+        .two-col li:hover { transform: translateY(-3px); }
+
+        /* Leadership */
+        .domain-grid {
+            display: grid;
+            gap: 1.15rem;
+        }
+
+        @media (min-width: 800px) {
+            .domain-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        .domain-block {
+            padding: 1.25rem 1.35rem;
+            background: var(--highlight);
+            border: 1px solid var(--line);
+            transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .domain-block:hover {
+            background: #ffffff;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(42, 33, 80, 0.06);
+        }
+
+        .domain-block h3 {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 0.45rem;
+            color: var(--ink);
+        }
+
+        .domain-block p {
+            font-size: 0.88rem;
+            color: var(--ink-soft);
+        }
+
+        /* Tech stack */
+        .stack-grid {
+            display: grid;
+            gap: 1.25rem;
+        }
+
+        @media (min-width: 800px) {
+            .stack-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        .stack-group {
+            background: var(--paper);
+            padding: 1.25rem 1.35rem;
+            border: 1px solid var(--line);
+        }
+
+        .stack-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 0.55rem;
+        }
+
+        .stack-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            list-style: none;
+        }
+
+        .stack-items li {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--ink-soft);
+            background: var(--highlight);
+            padding: 0.3rem 0.65rem;
+            border: 1px solid var(--line);
+        }
+
+        /* Awards */
+        .meta-row {
+            display: grid;
+            gap: 1.15rem;
+        }
+
+        @media (min-width: 700px) {
+            .meta-row { grid-template-columns: 1fr 1fr; }
+        }
+
+        .meta-item {
+            background: var(--paper);
+            padding: 1.4rem 1.45rem;
+            border-left: 3px solid var(--accent);
+        }
+
+        .meta-item h3 {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 1.35rem;
+            font-weight: 400;
+            margin-bottom: 0.55rem;
+        }
+
+        .meta-item p,
+        .meta-item li {
+            font-size: 0.9rem;
+            color: var(--ink-soft);
+        }
+
+        .meta-item ul { list-style: none; }
+        .meta-item li { margin: 0.35rem 0; }
+
+        /* Site footer */
+        .site-footer {
+            background: var(--highlight);
+            color: var(--ink-soft);
+            padding: 3rem 0 2rem;
+            border-top: 1px solid var(--line);
+        }
+
+        .footer-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-brand {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 1.5rem;
+            color: var(--ink);
+            margin-bottom: 0.35rem;
+        }
+
+        .footer-brand span { color: var(--accent-deep); }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem 1.25rem;
+        }
+
+        .footer-links a {
+            color: var(--accent-deep);
+            font-size: 0.88rem;
+            font-weight: 600;
+        }
+
+        .footer-links a:hover { color: var(--accent); }
+
+        .footer-copy {
+            padding-top: 1.25rem;
+            border-top: 1px solid var(--line);
+            font-size: 0.8rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 0.75rem;
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(18px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes gridDrift {
+            from { transform: translateY(0); }
+            to { transform: translateY(48px); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after {
+                animation: none !important;
+                transition: none !important;
             }
-            h2 {
-                font-size: 1.5rem;
+            .reveal { opacity: 1; transform: none; }
+        }
+
+        /* PDF / print */
+        body.is-pdf-export .site-nav,
+        body.is-pdf-export .mobile-menu,
+        body.is-pdf-export .nav-actions,
+        body.is-pdf-export .hero-cta,
+        body.is-pdf-export .no-print {
+            display: none !important;
+        }
+
+        body.is-pdf-export .hero {
+            min-height: auto;
+            padding: 2.5rem 0 2rem;
+        }
+
+        body.is-pdf-export .band { padding: 2rem 0; }
+        body.is-pdf-export .reveal { opacity: 1 !important; transform: none !important; }
+
+        @media print {
+            .site-nav, .mobile-menu, .nav-actions, .hero-cta, .no-print {
+                display: none !important;
             }
+            .hero {
+                min-height: auto;
+                padding: 1.5rem 0;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .band { padding: 1.25rem 0; break-inside: avoid; }
+            .project-card, .two-col li, .tag-list li { break-inside: avoid; }
+            .reveal { opacity: 1 !important; transform: none !important; }
+            a { color: inherit; }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="profile-photo">
-            <img src="https://media.licdn.com/dms/image/v2/C5603AQHv_BpFI8un7A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1657799850110?e=1749686400&v=beta&t=2ePUgRu7AzyWJDS6QEbBilJYsHcpLk7ikXnpP9BfHC8" alt="Mahadevan Varadhan" class="profile-photo"></div>
-        <h1>Mahadevan Varadhan</h1>
-        <p>Director of Technology | Senior Manager – AI and Data</p>
-    </header>
+    <nav class="site-nav no-print" id="siteNav" aria-label="Primary">
+        <div class="nav-inner">
+            <a class="nav-brand" href="#top">Mahadevan <span>Varadhan</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#stack">Stack</a></li>
+                <li><a href="#leadership">Leadership</a></li>
+                <li><a href="#awards">Awards</a></li>
+            </ul>
+            <div class="nav-actions">
+                <ul class="nav-social" aria-label="Social profiles">
+                    <li>
+                        <a href="https://www.linkedin.com/in/mahadevan-varadhan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.126 0 2.063 2.063 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mahadevanvaradhan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://gitlab.com/users/mahadevanvaradhan/projects" target="_blank" rel="noopener noreferrer" aria-label="GitLab">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.955 13.587l-1.342-4.135-2.664-8.189a.455.455 0 00-.867 0L16.418 9.45H7.582L4.918 1.263a.455.455 0 00-.867 0L1.386 9.452.044 13.587a.924.924 0 00.331 1.023L12 23.054l11.625-8.443a.92.92 0 00.33-1.024"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://medium.com/@mahadevan.varadhan" target="_blank" rel="noopener noreferrer" aria-label="Medium">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://mahadevanrv.blogspot.com/" target="_blank" rel="noopener noreferrer" aria-label="Blog">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                        </a>
+                    </li>
+                </ul>
+                <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-    <div class="container">
-        <section class="contact-info">
-            <h2>Contact Information</h2>
-            <p>Email: <a href="mailto:mahadevan.varadhan@gmail.com">mahadevan.varadhan@gmail.com</a></p>
-            <p>Phone: +91 9884531666</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/mahadevan-varadhan/" target="_blank">Profile</a></p>
-            <p>GitHub: <a href="https://github.com/mahadevanvaradhan" target="_blank">Profile</a></p>
-            <p>Medium: <a href="https://medium.com/@mahadevan.varadhan" target="_blank">Profile</a></p>
-        </section>
+    <div class="mobile-menu no-print" id="mobileMenu" hidden>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#stack">Stack</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#awards">Awards</a>
+        <div class="mobile-social" aria-label="Social profiles">
+            <a href="https://www.linkedin.com/in/mahadevan-varadhan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.126 0 2.063 2.063 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://github.com/mahadevanvaradhan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+            <a href="https://gitlab.com/users/mahadevanvaradhan/projects" target="_blank" rel="noopener noreferrer" aria-label="GitLab">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.955 13.587l-1.342-4.135-2.664-8.189a.455.455 0 00-.867 0L16.418 9.45H7.582L4.918 1.263a.455.455 0 00-.867 0L1.386 9.452.044 13.587a.924.924 0 00.331 1.023L12 23.054l11.625-8.443a.92.92 0 00.33-1.024"/></svg>
+            </a>
+            <a href="https://medium.com/@mahadevan.varadhan" target="_blank" rel="noopener noreferrer" aria-label="Medium">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+            </a>
+            <a href="https://mahadevanrv.blogspot.com/" target="_blank" rel="noopener noreferrer" aria-label="Blog">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+            </a>
+        </div>
+    </div>
 
-        <section class="summary">
-            <h2>About Me</h2>
-            <p>Passionate Data Engineer and AI enthusiast with over 20 years of experience in ETL, Data Modelling, Data Visualization, Business Intelligence, Artificial Intelligence, Gen AI, SQL, and Cloud technologies. I excel in building robust data platforms, creating insightful reports and dashboards using Python, Tableau, and Power BI, and driving innovation through cutting-edge AI solutions.</p>
-        </section>
-
-        <section class="skills">
-            <h2>Key Skills</h2>
-            <div class="skills-grid">
-                <div>
-                    <p><strong>SQL Server/Redshift/BigQuery</strong> <span class="stars">★★★★★★★★☆☆</span></p>
-                    <p><strong>Airflow/Pandas/Python</strong> <span class="stars">★★★★★★★☆☆☆</span></p>
-                    <p><strong>Data Warehouse/Data Lake</strong> <span class="stars">★★★★★★★★☆☆</span></p>
+    <div id="resumeRoot">
+        <header class="hero" id="top">
+            <div class="hero-inner">
+                <p class="hero-eyebrow">Data · AI · Analytics</p>
+                <h1>Mahadevan Varadhan</h1>
+                <p class="hero-lead">Senior Manager · Lead Data Engineer · Senior Data Architect · Senior BI Developer</p>
+                <p class="hero-sub">Building enterprise data platforms, AI enablement, and analytics functions that turn strategy into measurable outcomes.</p>
+                <div class="hero-cta no-print">
+                    <a class="btn btn-primary" href="#projects">View projects</a>
+                    <a class="btn btn-ghost" href="mahadevan_data_architect.pdf" download="mahadevan_data_architect.pdf">Download Resume</a>
+                    <a class="btn btn-ghost" href="mahadevan_cover_letter.pdf" download="mahadevan_cover_letter.pdf">Download Cover Letter</a>
                 </div>
-                <div>
-                    <p><strong>SSIS/SSRS/Data Modelling</strong> <span class="stars">★★★★★★★★☆☆</span></p>
-                    <p><strong>NLP/Tableau/Data Studio</strong> <span class="stars">★★★★★★★☆☆☆</span></p>
-                    <p><strong>GenAI/Prompt Engineering</strong> <span class="stars">★★★★★★★☆☆☆</span></p>
+                <div class="hero-links">
+                    <a href="tel:+919884531666">+91 9884531666</a>
+                    <a href="mailto:mahadevan.varadhan@gmail.com">Email</a>
+                    <a href="https://cloudmerge.org" target="_blank" rel="noopener noreferrer">Website</a>
+                    <a href="https://www.linkedin.com/in/mahadevan-varadhan" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://github.com/mahadevanvaradhan" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://gitlab.com/users/mahadevanvaradhan/projects" target="_blank" rel="noopener noreferrer">GitLab</a>
+                    <a href="https://medium.com/@mahadevan.varadhan" target="_blank" rel="noopener noreferrer">Medium</a>
+                    <a href="https://mahadevanrv.blogspot.com/" target="_blank" rel="noopener noreferrer">Blog</a>
                 </div>
-                <div>
-                    <p><strong>GCP/AWS Cloud/AWS Glue</strong> <span class="stars">★★★★★★☆☆☆☆</span></p>
-                    <p><strong>Tableau/Power BI</strong> <span class="stars">★★★★★★★★☆☆</span></p>
-                    <p><strong>Flask/Django/Fast API</strong> <span class="stars">★★★★★★★★☆☆</span></p>
+            </div>
+        </header>
+
+        <section class="band band-alt" id="about">
+            <div class="wrap reveal">
+                <div class="section-head">
+                    <p class="section-label">About</p>
+                    <h2 class="section-title">Executive summary</h2>
+                    <hr class="section-rule">
+                </div>
+                <p class="summary-text">
+                    Program Delivery &amp; Data Analytics Leader with 20+ years in software across media, education, and enterprise platforms.
+                    Proven track record leading AI, Data, and Analytics transformations, managing large-scale product delivery engagements,
+                    and ensuring delivery excellence across global teams.
+                </p>
+                <p class="summary-text">
+                    An Agile leader and hands-on people manager, adept at coaching teams, solving integration challenges, and driving innovation
+                    from concept to implementation. Skilled in aligning data strategy, AI enablement, and delivery execution with business outcomes—
+                    measurable ROI, high utilization, and strong profit margins. Flexible with domestic and international travel for client engagement.
+                </p>
+            </div>
+        </section>
+
+        <section class="band band-tint" id="certs">
+            <div class="wrap reveal">
+                <div class="section-head">
+                    <p class="section-label">Credentials</p>
+                    <h2 class="section-title">Certifications</h2>
+                    <hr class="section-rule">
+                </div>
+                <ul class="cert-grid">
+                    <li><span class="cert-mark" aria-hidden="true">▸</span><span>DP-600: Microsoft Certified Fabric Analytics Engineer Associate</span></li>
+                    <li><span class="cert-mark" aria-hidden="true">▸</span><span>DP-700: Microsoft Certified Fabric Data Engineer Associate</span></li>
+                    <li><span class="cert-mark" aria-hidden="true">▸</span><span>Generative AI for NLP — Great Learning</span></li>
+                    <li><span class="cert-mark" aria-hidden="true">▸</span><span>Data Science &amp; Machine Learning — Great Learning</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="band" id="experience">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <p class="section-label">Career</p>
+                    <h2 class="section-title">Professional experience</h2>
+                    <hr class="section-rule">
+                    <p class="section-intro">Leadership roles spanning cybersecurity analytics, talent platforms, e-learning, media, and enterprise education.</p>
+                </div>
+
+                <article class="role reveal reveal-delay-1">
+                    <div class="role-header">
+                        <h3 class="role-title">Lead Data &amp; Analytics</h3>
+                        <span class="role-dates">Jan 2026 – Present</span>
+                    </div>
+                    <p class="role-company">CYGNVS</p>
+                    <p class="role-blurb">Leading the data and BI team to build real-time data engineering on AWS and GCP, delivering decision-making insights with Looker ML and Looker Data Studio.</p>
+                    <ul>
+                        <li>Replaced legacy datalake with a multi-dimensional data warehouse and datamarts using medallion architecture.</li>
+                        <li>Upgraded reporting with real-time metrics so the product can deliver action items that help clients prevent damage from risks and cybersecurity incidents.</li>
+                        <li>Integrated HubSpot data into BigQuery to help Sales upgrade clients to premium features.</li>
+                    </ul>
+                </article>
+
+                <article class="role reveal reveal-delay-2">
+                    <div class="role-header">
+                        <h3 class="role-title">Director of Data &amp; Engineering</h3>
+                        <span class="role-dates">Jan 2022 – Jan 2026</span>
+                    </div>
+                    <p class="role-company">Talentship.io</p>
+                    <p class="role-subhead">AI &amp; Analytics Enablement</p>
+                    <ul>
+                        <li>Built and scaled AI/GenAI capabilities (LLM-based faculty &amp; customer support bots), reducing resolution time by 65% and improving product intelligence.</li>
+                        <li>Designed personalization and anomaly detection frameworks for customer datasets, driving proactive insights and engagement.</li>
+                        <li>Partnered with executives to define enterprise AI strategy, resulting in 5+ reusable frameworks adopted across analytics &amp; ML projects.</li>
+                    </ul>
+                    <p class="role-subhead">Program &amp; Delivery Leadership</p>
+                    <ul>
+                        <li>Directed end-to-end delivery of multi-domain data platforms, achieving 99.9% availability and consistent client satisfaction.</li>
+                        <li>Applied Agile methodologies to manage delivery pipelines, improving productivity by 30% and ensuring on-time delivery.</li>
+                        <li>Led ISO certification programs (9001, 27001, 27701), mitigating risks and strengthening compliance governance.</li>
+                    </ul>
+                    <p class="role-subhead">Business Analytics &amp; Insights</p>
+                    <ul>
+                        <li>Developed executive dashboards consolidating Salesforce, OneStream, and internal data into a Fabric Lakehouse for cost optimization insights.</li>
+                        <li>Drove data democratization through self-service BI across marketing, product, and sales.</li>
+                        <li>Designed churn and engagement models that improved retention strategy effectiveness.</li>
+                    </ul>
+                    <p class="role-subhead">Data Infrastructure &amp; Governance</p>
+                    <ul>
+                        <li>Implemented enterprise-grade pipelines (Airflow, DBT, Fabric, Glue), reducing latency by 40% across 10+ domains.</li>
+                        <li>Spearheaded ISO 9001, 27001, 27701 certifications, strengthening client trust and ensuring GDPR-aligned data governance.</li>
+                        <li>Mentored a team of 100+ engineers and analysts, fostering a data-driven, innovation-focused culture.</li>
+                    </ul>
+                </article>
+
+                <article class="role reveal">
+                    <div class="role-header">
+                        <h3 class="role-title">Director of Data &amp; Engineering</h3>
+                        <span class="role-dates">Jan 2019 – Jan 2022</span>
+                    </div>
+                    <p class="role-company">Learnship.com</p>
+                    <p class="role-subhead">Delivery Leadership</p>
+                    <ul>
+                        <li>Managed large-scale migration to AWS serverless architecture, reducing infra costs by 45% while improving availability.</li>
+                        <li>Delivered a global data warehouse post-acquisition, reducing analyst hours 3× annually and aligning product delivery with integration strategy.</li>
+                        <li>Ensured delivery excellence metrics (quality, estimation, utilization) while leading cross-border engineering teams.</li>
+                    </ul>
+                    <p class="role-subhead">AI/ML &amp; Business Intelligence</p>
+                    <ul>
+                        <li>Launched AI-powered Newsfeed with personalized learning content, increasing engagement by 30%.</li>
+                        <li>Owned global data warehouse strategy post-acquisition, saving ~10K analyst hours annually and improving lifecycle insights.</li>
+                        <li>Led Customer Data Platform (CDP) integration of Learnship and GlobalEnglish, aligning marketing and learner insights.</li>
+                    </ul>
+                    <p class="role-subhead">Infrastructure, Governance &amp; Team</p>
+                    <ul>
+                        <li>Orchestrated 80% migration to AWS serverless architecture, reducing infra costs 45% and improving reliability.</li>
+                        <li>Established governance standards ensuring consistent data quality across platforms (GDPR / ISO aligned).</li>
+                        <li>Led modernization workshops and hackathons, upskilling 50+ engineers in serverless and AI-driven practices.</li>
+                    </ul>
+                </article>
+
+                <article class="role reveal">
+                    <div class="role-header">
+                        <h3 class="role-title">Senior Data Architect</h3>
+                        <span class="role-dates">May 2016 – Jan 2019</span>
+                    </div>
+                    <p class="role-company">News Technology Services (News Corp)</p>
+                    <ul>
+                        <li>Designed enterprise-scale Customer Data Platform enabling segmentation that drove 20% uplift in targeted campaigns.</li>
+                        <li>Built real-time editorial dashboard (BigQuery + NLP APIs), replacing third-party tools and saving $1.5M annually.</li>
+                        <li>Migrated data pipelines to Airflow, cutting latency 50% for 5+ global newsrooms.</li>
+                        <li>Built customer churn prediction model, increasing retention by 8% and lifetime value by 12%.</li>
+                        <li>Managed a 40-member cross-functional data team delivering agile analytics products to global stakeholders.</li>
+                    </ul>
+                </article>
+
+                <article class="role reveal">
+                    <div class="role-header">
+                        <h3 class="role-title">Technology Specialist – Data</h3>
+                        <span class="role-dates">2012 – 2016</span>
+                    </div>
+                    <p class="role-company">Pearson Business English</p>
+                    <ul>
+                        <li>Re-architected enterprise data warehouse supporting 1M+ learners, improving reporting performance by 35%.</li>
+                        <li>Delivered dashboards to track adoption and learner success, influencing product strategy and roadmap.</li>
+                    </ul>
+                </article>
+
+                <p class="earlier-roles reveal">
+                    <strong>Earlier roles:</strong> BI Analyst — EC Group Soft (2011–2012) &nbsp;|&nbsp; BI Consultant — Congruent Info-Tech (2007–2011)
+                </p>
+            </div>
+        </section>
+
+        <section class="band band-alt" id="projects">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <p class="section-label">Selected work</p>
+                    <h2 class="section-title">Key projects</h2>
+                    <hr class="section-rule">
+                    <p class="section-intro">Flagship delivery across lakehouse platforms, GenAI products, CDP, and editorial intelligence.</p>
+                </div>
+                <ul class="project-grid">
+                    <li class="project-card reveal">
+                        <p class="project-meta">Talentship · Fabric / Power BI</p>
+                        <h3>AO Lakehouse &amp; Reporting</h3>
+                        <p>Built a Lakehouse and visualization reports with Power BI on Microsoft Fabric for analytics and decision support.</p>
+                    </li>
+                    <li class="project-card reveal reveal-delay-1">
+                        <p class="project-meta">Octonomy · LLM / Embeddings</p>
+                        <h3>Knowledge Store</h3>
+                        <p>Designed embedding-based knowledge retrieval with LLMs for real-time customer intelligence.</p>
+                    </li>
+                    <li class="project-card reveal reveal-delay-2">
+                        <p class="project-meta">Octonomy · Agents / MCP</p>
+                        <h3>LLM Chatbot Platform</h3>
+                        <p>Developed LLM APIs and chatbots with agent calling, multi-function calling, and MCP to turn requirements into working prototypes quickly.</p>
+                    </li>
+                    <li class="project-card reveal">
+                        <p class="project-meta">Octonomy · Lakehouse</p>
+                        <h3>Analytics Lakehouse</h3>
+                        <p>Designed lakehouse architecture for analytics and visualization across product and customer domains.</p>
+                    </li>
+                    <li class="project-card reveal reveal-delay-1">
+                        <p class="project-meta">Learnship · NLP / AI</p>
+                        <h3>AI-Powered Newsfeed</h3>
+                        <p>Personalized learning content with NLP analytics, driving double-digit engagement growth for global learners.</p>
+                    </li>
+                    <li class="project-card reveal reveal-delay-2">
+                        <p class="project-meta">News Corp · BigQuery / NLP</p>
+                        <h3>Editorial Intelligence Dashboard</h3>
+                        <p>Real-time editorial dashboard with BigQuery and NLP APIs—replaced third-party tools and saved $1.5M annually.</p>
+                    </li>
+                    <li class="project-card reveal">
+                        <p class="project-meta">CYGNVS · BigQuery / HubSpot</p>
+                        <h3>Sales Data Warehouse</h3>
+                        <p>Medallion-architecture warehouse with HubSpot integration enabling Sales to drive premium feature upgrades.</p>
+                    </li>
+                    <li class="project-card reveal reveal-delay-1">
+                        <p class="project-meta">News Corp · CDP</p>
+                        <h3>Customer Data Platform</h3>
+                        <p>Enterprise CDP enabling audience segmentation that drove 20% uplift in targeted campaigns.</p>
+                    </li>
+                </ul>
+
+                <div class="skills-panel reveal" id="skills">
+                    <p class="section-label">Capabilities</p>
+                    <h2 class="section-title">Key skills</h2>
+                    <hr class="section-rule">
+                    <p class="section-intro">Core competencies applied across strategy, delivery, platforms, and AI enablement.</p>
+                    <div class="skills-groups">
+                        <div class="skills-group">
+                            <h4>Strategy &amp; Leadership</h4>
+                            <ul class="tag-list">
+                                <li>Data &amp; Analytics Strategy</li>
+                                <li>Program &amp; Delivery Leadership</li>
+                                <li>Agile Transformation</li>
+                                <li>Stakeholder Management</li>
+                                <li>Team Mentorship</li>
+                                <li>CxO Partnership</li>
+                            </ul>
+                        </div>
+                        <div class="skills-group">
+                            <h4>Data &amp; Platforms</h4>
+                            <ul class="tag-list">
+                                <li>Data Architecture</li>
+                                <li>Data Modelling</li>
+                                <li>Lakehouse Design</li>
+                                <li>ETL / ELT</li>
+                                <li>Data Governance</li>
+                                <li>ISO / GDPR Compliance</li>
+                            </ul>
+                        </div>
+                        <div class="skills-group">
+                            <h4>AI &amp; Analytics</h4>
+                            <ul class="tag-list">
+                                <li>AI / GenAI Enablement</li>
+                                <li>LLM Applications</li>
+                                <li>NLP</li>
+                                <li>Predictive Analytics</li>
+                                <li>Anomaly Detection</li>
+                                <li>Recommendation Systems</li>
+                            </ul>
+                        </div>
+                        <div class="skills-group">
+                            <h4>Business Intelligence</h4>
+                            <ul class="tag-list">
+                                <li>Data Visualization</li>
+                                <li>Executive Dashboards</li>
+                                <li>Self-Service BI</li>
+                                <li>KPI Design</li>
+                                <li>Churn &amp; Retention</li>
+                                <li>Business Insights</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="experience">
-            <h2>Professional Experience</h2>
-            <div class="experience-item">
-                <h3>Director of Technology</h3>
-                <p>Talentship (Jan 2022 - Present) | Octonomy (Jan 2025 - Present)</p>
-                <ul>
-                    <li>Developed SQL queries for DBT models and built Airflow pipelines for TomTailor; designed and published Tableau reports.</li>
-                    <li>Created data models and provided technical guidance on pipeline and architecture for SoSafe.</li>
-                    <li>Developed Tableau reports for AO in Event Planning, IT Budget Cost, and Governance Board.</li>
-                    <li>Built LLM-based AO Guide bot to extract data from medical books and papers for faculty and students.</li>
-                    <li>Created AO Customer Support Bot using Langchain and Claude LLMs for instant Jira ticket support.</li>
-                    <li>Designed data models and vector embeddings for Octonomy’s knowledge store; worked on prototypes and use cases.</li>
-                    <li>Served as Management Representative for ISO 9001, 27001, and 27701 certifications.</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Director of Engineering and Data Platform</h3>
-                <p>Learnship (Apr 2021 – Jan 2022)</p>
-                <ul>
-                    <li>Led migration of legacy products to serverless technologies (AWS Lambda, DynamoDB, Aurora, Personalize, Pinpoint).</li>
-                    <li>Conducted R&D with architects and workshops with Azure/AWS partners for best practices.</li>
-                    <li>Organized hackathons and training programs to upskill teams; introduced reward systems.</li>
-                    <li>Collaborated with global teams and clients; successfully migrated 80% of legacy systems.</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Head of Data Engineering</h3>
-                <p>Learnship (Jan 2019 – Apr 2021)</p>
-                <ul>
-                    <li>Architected a global data warehouse post-acquisition using AWS Glue, S3, Redshift, and Power BI.</li>
-                    <li>Designed data flows and implemented near real-time reporting for learners.</li>
-                    <li>Introduced serverless notifications for weekly/monthly progress metrics.</li>
-                    <li>Developed AI News Feed: classified news by difficulty, built recommendation systems, and created dashboards.</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Senior Data Architect</h3>
-                <p>News Technology Services (News Corp) (May 2016 – Jan 2019)</p>
-                <ul>
-                    <li>Designed Customer Data Platform (CDP) in AWS Redshift and Airflow; built decision-making reports.</li>
-                    <li>Implemented data governance and anomaly detection; created customer identification system.</li>
-                    <li>Migrated SAS ETL pipelines to Airflow and built data marts in BigQuery.</li>
-                    <li>Architected Editorial Dashboard with Google Analytics, BigQuery, and NLP APIs for real-time insights.</li>
-                    <li>Managed teams to deliver reports and optimize reader flow for editorial content.</li>
+        <section class="band band-tint" id="achievements">
+            <div class="wrap reveal">
+                <div class="section-head">
+                    <p class="section-label">Impact</p>
+                    <h2 class="section-title">Key achievements</h2>
+                    <hr class="section-rule">
+                </div>
+                <ul class="two-col">
+                    <li>Defined and executed AI/Analytics strategies at Director level across 3 organizations.</li>
+                    <li>Spearheaded multiple ISO certifications, unlocking enterprise contract eligibility.</li>
+                    <li>Migrated 80% of systems to serverless cloud, reducing costs 45%.</li>
+                    <li>Built AI-powered solutions that improved customer satisfaction, engagement, and retention.</li>
+                    <li>Led global teams of 100+, modernizing platforms and enabling a data-driven culture.</li>
+                    <li>Delivered editorial intelligence platform at News Corp saving $1.5M annually.</li>
                 </ul>
             </div>
         </section>
 
-        <section class="education">
-            <h2>Education</h2>
-            <p><strong>Master of Science</strong></p>
-            <p>University of Madras, Chennai</p>
+        <section class="band" id="stack">
+            <div class="wrap reveal">
+                <div class="section-head">
+                    <p class="section-label">Toolkit</p>
+                    <h2 class="section-title">Tech stack</h2>
+                    <hr class="section-rule">
+                </div>
+                <div class="stack-grid">
+                    <div class="stack-group">
+                        <p class="stack-label">Cloud &amp; Databases</p>
+                        <ul class="stack-items">
+                            <li>Azure</li><li>AWS</li><li>GCP</li>
+                            <li>BigQuery</li><li>Redshift</li><li>Synapse</li>
+                            <li>PostgreSQL</li><li>MySQL</li><li>MSSQL</li>
+                            <li>DynamoDB</li><li>SAP HANA</li><li>Fabric</li>
+                            <li>Athena</li><li>ClickHouse</li><li>S3 / GCS / Blob</li>
+                        </ul>
+                    </div>
+                    <div class="stack-group">
+                        <p class="stack-label">ETL &amp; Data Tools</p>
+                        <ul class="stack-items">
+                            <li>Airflow</li><li>AWS Glue</li><li>DBT</li><li>Dataform</li>
+                            <li>Data Factory</li><li>MWAA</li><li>Talend</li>
+                            <li>Cloud Composer</li><li>Databricks</li>
+                            <li>Step Functions</li><li>SSIS</li><li>Dataflow</li>
+                        </ul>
+                    </div>
+                    <div class="stack-group">
+                        <p class="stack-label">Visualization</p>
+                        <ul class="stack-items">
+                            <li>Power BI</li><li>Tableau</li><li>Looker ML</li>
+                            <li>Looker Data Studio</li><li>SSRS</li><li>Jupyter Notebook</li>
+                        </ul>
+                    </div>
+                    <div class="stack-group">
+                        <p class="stack-label">AI &amp; ML</p>
+                        <ul class="stack-items">
+                            <li>Cursor</li><li>OpenAI</li><li>Google Gemini</li>
+                            <li>Grok</li><li>Mistral</li><li>Anthropic Claude</li>
+                            <li>LangChain</li><li>LlamaIndex</li><li>Python</li>
+                            <li>RAG</li><li>MCP</li><li>Streamlit</li>
+                            <li>NLP</li><li>NLTK</li><li>Pandas</li>
+                            <li>PySpark</li><li>SciKit</li><li>NumPy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="awards">
-            <h2>Awards & Certifications</h2>
-            <div class="awards-item">
-                <p><strong>ISO 9001, 27001, 27701 Certifications</strong></p>
-                <p>Played a major role as Management Representative in achieving these certifications at Octonomy.</p>
+        <section class="band band-dark" id="leadership">
+            <div class="wrap reveal">
+                <div class="section-head">
+                    <p class="section-label">Practice areas</p>
+                    <h2 class="section-title">Strategic leadership domains</h2>
+                    <hr class="section-rule">
+                </div>
+                <div class="domain-grid">
+                    <div class="domain-block">
+                        <h3>Program Delivery &amp; Product Leadership</h3>
+                        <p>Large engagement delivery, Agile leadership, product integration, delivery excellence, risk &amp; issue management, profitability oversight.</p>
+                    </div>
+                    <div class="domain-block">
+                        <h3>Data Analytics, Science &amp; AI Enablement</h3>
+                        <p>Machine learning, Generative AI, LLMs, NLP, recommendation systems, predictive analytics, anomaly detection, customer segmentation.</p>
+                    </div>
+                    <div class="domain-block">
+                        <h3>Business Analytics &amp; Insights</h3>
+                        <p>KPI design, churn prediction, customer lifecycle value, conversion &amp; retention analysis, self-service BI, executive dashboards.</p>
+                    </div>
+                    <div class="domain-block">
+                        <h3>Team Building &amp; Cross-Functional Leadership</h3>
+                        <p>Global team leadership (100+), hiring &amp; scaling, CxO partnerships, stakeholder management across Product, Sales, Marketing, Legal, and Risk.</p>
+                    </div>
+                    <div class="domain-block">
+                        <h3>Data Infrastructure &amp; Governance</h3>
+                        <p>Data lakehouse (Fabric, Onelake, Redshift, BigQuery), ETL/ELT pipelines (Airflow, DBT, Glue), ISO certifications, GDPR &amp; SOC2, MDM.</p>
+                    </div>
+                    <div class="domain-block">
+                        <h3>Data &amp; AI Strategy Enablement</h3>
+                        <p>AI/ML roadmaps, thought leadership in AI enablement, business-technology alignment, data literacy and culture building.</p>
+                    </div>
+                </div>
             </div>
-            <div class="awards-item">
-                <p><strong>Certifications</strong></p>
-                <p>View full list on <a href="https://www.linkedin.com/in/mahadevan-varadhan/details/certifications/" target="_blank">LinkedIn</a>.</p>
+        </section>
+
+        <section class="band band-alt" id="awards">
+            <div class="wrap reveal">
+                <div class="section-head">
+                    <p class="section-label">Recognition</p>
+                    <h2 class="section-title">Awards &amp; education</h2>
+                    <hr class="section-rule">
+                </div>
+                <div class="meta-row">
+                    <div class="meta-item">
+                        <h3>Awards</h3>
+                        <ul>
+                            <li>Best Manager Award — News UK, 2018</li>
+                            <li>Employee of the Year — Pearson, 2014</li>
+                            <li>Star Performer — Global English, 2013</li>
+                        </ul>
+                    </div>
+                    <div class="meta-item">
+                        <h3>Education</h3>
+                        <p><strong>Master of Science</strong><br>University of Madras, Chennai</p>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
+
+    <footer class="site-footer no-print">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div>
+                    <p class="footer-brand">Mahadevan <span>Varadhan</span></p>
+                    <p>Lead Data &amp; Analytics</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://cloudmerge.org" target="_blank" rel="noopener noreferrer">Website</a>
+                    <a href="https://www.linkedin.com/in/mahadevan-varadhan" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://github.com/mahadevanvaradhan" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://gitlab.com/users/mahadevanvaradhan/projects" target="_blank" rel="noopener noreferrer">GitLab</a>
+                    <a href="https://medium.com/@mahadevan.varadhan" target="_blank" rel="noopener noreferrer">Medium</a>
+                    <a href="mailto:mahadevan.varadhan@gmail.com">Email</a>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <span>© <span id="year"></span> Mahadevan Varadhan</span>
+                <div class="footer-downloads">
+                    <a class="btn btn-download" href="mahadevan_data_architect.pdf" download="mahadevan_data_architect.pdf">Download Resume</a>
+                    <a class="btn btn-outline" href="mahadevan_cover_letter.pdf" download="mahadevan_cover_letter.pdf">Download Cover Letter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            const nav = document.getElementById('siteNav');
+            const toggle = document.getElementById('navToggle');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const yearEl = document.getElementById('year');
+            const sectionIds = ['about', 'experience', 'projects', 'skills', 'stack', 'leadership', 'awards'];
+
+            if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+            function setScrolled() {
+                nav.classList.toggle('is-scrolled', window.scrollY > 20);
+            }
+
+            function closeMobile() {
+                toggle.classList.remove('is-open');
+                toggle.setAttribute('aria-expanded', 'false');
+                mobileMenu.classList.remove('is-open');
+                mobileMenu.hidden = true;
+            }
+
+            toggle.addEventListener('click', function () {
+                const open = toggle.classList.toggle('is-open');
+                toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+                mobileMenu.classList.toggle('is-open', open);
+                mobileMenu.hidden = !open;
+            });
+
+            mobileMenu.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', closeMobile);
+            });
+
+            window.addEventListener('scroll', setScrolled, { passive: true });
+            setScrolled();
+
+            const reveals = document.querySelectorAll('.reveal');
+            if ('IntersectionObserver' in window) {
+                const io = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            io.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1, rootMargin: '0px 0px -36px 0px' });
+                reveals.forEach(function (el) { io.observe(el); });
+            } else {
+                reveals.forEach(function (el) { el.classList.add('is-visible'); });
+            }
+
+            const navAnchors = document.querySelectorAll('.nav-links a');
+            function updateActiveNav() {
+                let current = sectionIds[0];
+                sectionIds.forEach(function (id) {
+                    const el = document.getElementById(id);
+                    if (!el) return;
+                    if (el.getBoundingClientRect().top <= 130) current = id;
+                });
+                navAnchors.forEach(function (a) {
+                    a.classList.toggle('is-active', a.getAttribute('href') === '#' + current);
+                });
+            }
+            window.addEventListener('scroll', updateActiveNav, { passive: true });
+            updateActiveNav();
+        })();
+    </script>
 </body>
 </html>

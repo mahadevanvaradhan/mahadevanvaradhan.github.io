@@ -1,5 +1,5 @@
 # Site settings
-title: Head of Data Engineering & AI 
+title: Head of Data & Analytics
 email: mahadevan.varadhan@gmail.com
 name: Mahadevan Varadhan
 
@@ -9,106 +9,79 @@ markdown: kramdown
 #User specific content
 #Links that will appear in the navbar
 primarylinks:
- - title: My Blog
-   url: https://cloudmerge.org/
- - title: Git Lab
-   url: https://gitlab.com/rvmahadevan
  - title: LinkedIn
    url: https://www.linkedin.com/in/mahadevan-varadhan/
- - title: Google Blog 1
-   url: http://mahadevanrv.blogspot.com/
- - title: Google Blog 2
-   url: https://mahacloudmerge.blogspot.com/
+ - title: GitHub
+   url: https://github.com/mahadevanvaradhan
+ - title: Blog
+   url: https://cloudmerge.org/
+ - title: Medium
+   url: https://medium.com/@mahadevan.varadhan
 
 #Any buzzword skills you want to include
 skills:
- - SQL Server
- - Data Warehouse
- - Redshift
- - Microservices
- - Bigquery
- - Product management
- - Agile Methodology
- - Data Processing
- - Python
- - REST API
- - Django Framework
- - Flask
+ - Data Strategy & CoE Leadership
+ - AI & ML Enablement
+ - Azure
+ - AWS
+ - GCP
+ - BigQuery
+ - Fabric
+ - Airflow
+ - DBT
  - Power BI
  - Tableau
- - Data Studio
- - SSAS
- - SSIS
- - SSRS
- - Data Architecture
- - Machine Learning
- - Recommendation Engine
- - Regression and Prediction
- - Airflow
+ - Looker
+ - OpenAI
+ - LangChain
+ - Python
+ - RAG
  - NLP
- - Data Modelling
- - AWS Personalization
- - Google Dataflow
- - Google Dataproc
- - Bigdata
- - Hive
-
-# #Blogfeed is optional - including this will add JS to call the feed and populate blog list
-# blogfeed: http://mahadevanrv.blogspot.com/feeds/posts/default?alt=json
+ - Data Governance
+ - ISO / GDPR Compliance
 
 #Work experience is required
 roles:
- - title: Head of Data Engineering
-   start: 2019 
-  #  end: Ongoing
-   employer: Learnship
-   description: Managing all data products development, data warehouse, business intelligence and artificial intelligence teams. Work across all product owners and get the business needs and help them by delivering quality report. Platform - AWS Cloud services, Python, Airflow, AWS Redshift, Power BI, Google NLP, REST Api, Recommendation Services.
- - title: Senior Data Architect
-   start: 2016 
-  #  end: Jan 2019
-   employer: News Technologies (News Corp)
-   description: Managed data engineering and data science teams. Responsible for designing and architecting data processing. Worked in Google Cloud services, NLP, Python, Airflow, AWS Redshift, Tableau, and Data Studio.
+ - title: Lead Data & Analytics
+   start: 2026
+   employer: CYGNVS
+   description: Leading data and BI team for real-time data engineering with AWS and GCP, delivering insights with Looker ML and Looker Studio. Replaced legacy datalake with medallion-architecture warehouse and datamarts; upgraded real-time reporting for cybersecurity risk actioning; integrated HubSpot into BigQuery for Sales upsell.
+ - title: Director of Data & Engineering
+   start: 2022
+   employer: Talentship.io
+   description: Led AI/analytics strategy and data modernization for global talent analytics platform. Scaled Data & AI CoE (99.9% availability, 40% latency reduction); delivered AI chatbot (65% faster support); Salesforce + Lakehouse insights (70% faster executive reporting); directed ISO 9001/27001/27701; mentored 100+ engineers.
+ - title: Director of Data & Engineering
+   start: 2019
+   employer: Learnship.com
+   description: Established unified data infrastructure through data engineering and BI modernization. Led CDP integration of Learnship and GlobalEnglish; delivered AI Newsfeed (15% engagement growth); built GDPR/ISO governance framework.
+ - title: Project Manager & Senior Data Architect
+   start: 2016
+   employer: News Corp
+   description: Drove digital engagement platform for UK/US media. BigQuery architecture for millions of daily events (60% latency reduction); churn prediction (+8% retention, +12% LTV); managed 40-member data team.
  - title: Technology Specialist
-   start: 2015 
-  #  end: April 2016
-   employer: Pearson English Business Solutions
-   description: Worked as a project manager for Data Warehouse and Business Intelligence developments. Worked in MSBI tools, AWS Redshift, Tableau, and Talend Big Data.
- - title: Lead - Data Warehouse
-   start: 2012 
-  #  end: March 2015
-   employer: GlobalEnglish
-   description: Lead developer in designing data model, data warehouse and creating data pipelines and reports using SSIS, SSRS, and SSAS data tools.
- - title: Business Intelligence Analyst
-   start: 2011 
-  #  end: July 2012
-   employer: EC Group Datasoft
-   description: Lead BI team to accomplish task in time with quality. Responsible for gathering requirements from client, analyzing, planning, and data modelling. Developing and reviewing SSIS packages.
- - title: Associate BI Consultant
-   start: 2007 
-  #  end: May 2011
-   employer: Congruent Info-tech
-   description: Involved in analyzing client databases, designing new data warehouse, planning and developing SSIS packages, SSRS reports, SSAS Cubes and creating dashboards using SSRS and performance Point Server 2007. <br/> Worked mostly in resource management, finance, sales and Helpdesk domains.
- - title: Technical Editor
-   start: 2003
-   #  end: May 2011
-   employer: Scientific Publishing Service
-   description: Responsible for editing and validating Tex & LaTex tagging. Compile and paginating as per the journal style. Worked on TypeSetting Tool testing. Training freshers on Tex and Latex tagging and journal styles.
-
-# https://github.com/robhinds/robhinds.github.io/blob/master/_config.yml
+   start: 2012
+   employer: Pearson Business English
+   description: Re-architected enterprise data warehouse (+35% reporting performance); built real-time dashboards for product roadmap and learner success.
+ - title: BI Analyst
+   start: 2011
+   employer: EC Group Soft
+   description: Earlier role in business intelligence analysis and delivery.
+ - title: BI Consultant
+   start: 2007
+   employer: Congruent Info-Tech
+   description: Earlier role as BI consultant across resource management, finance, sales, and helpdesk domains.
 
 intro: |
-  I am a data engineer with 16 years experience specialized in Data Warehouse and cloud data engineering in AWS, Google Cloud and Azure Cloud. <br/>
-  My key technical skill sets are SQL Server BI Tools, Power BI, Redshift, Python, Tableau and Data Studio. <br/>
-  I primarily work on developing Data Warehousing, Data Modelling, Data Architecting and contributes toward creating data pipeling and BI reports for business.<br/>
-  I am also involved in developing machine learning models including recommendation engine and prediction. <br/>
-  I also manage DW/BI team and all data products development involving NLP, AI and machine learning.<br/>
+  Strategic Head of Data & Analytics with 20+ years of experience building enterprise-scale
+  data, AI, and analytics functions across global markets. Expert in scaling Centers of
+  Excellence (CoE), leading AI-driven transformations, and enabling data monetization
+  and cross-sell growth. Proven success driving 40–50% cost reduction, 99.9% uptime, and
+  double-digit revenue growth through cloud modernization, BI strategy, and advanced
+  analytics delivery.
+
 #An additional info freetext section is optional at the bottom of the page - can be text or HTML
 additionalinfo: |
-   <strong>SQL</strong>: Having good hands-on experience with SQL queries. Can write complex queries, stored procedures, functions and views that required for applications, reports and analytics.<br/>
-   <strong>Python</strong>: Using Python I developed many data pipelines with Airflow, Dataflow, AWS Glue. Good in Panda and Pyspark. Worked in contributing to Flask and Djangio API's developments.<br/>
-   <strong>NLP</strong>Strong knowledge in NLP and NLP api's. Has used Google NLP services and opensources like NLTK, Hugging Face transformesrs and as well as OpenAI for NLP developments. Has built successful News API product with NLP features.<br/>
-   <strong>Cloud platforms</strong>: Has experience working with different cloud environments and their database services. have knowledge in AWS, Google Cloud  and Azure cloud services.<br/>
-   <strong>API Development</strong>: Has contributed in API developments using Flask and Django framework. Has knowledge in GraphQL.
-   <strong>Machine Learning</strong>: Built recomendation models on content recommendation based on learner preference. Has worked on churn prediction with user experience and feedback.
-   <strong>Power BI and Tableau</strong>: Worked on delivering many decision making reports and dashboards using Power BI and Tableau visualization tools.
-   In addition to the above key skills, I also worked on many R&D projects using different cloud services and open sources.  
+  <strong>Cloud &amp; Databases</strong>: Azure | AWS | GCP | BigQuery | Redshift | Synapse | PostgreSQL | Fabric<br/>
+  <strong>ETL &amp; Data Tools</strong>: Airflow | AWS Glue | DBT | Data Factory | MWAA | Talend | Cloud Composer | Databricks<br/>
+  <strong>Visualization</strong>: Power BI | Tableau | Domo | Data Studio | Looker<br/>
+  <strong>AI &amp; ML</strong>: OpenAI | Anthropic Claude | LangChain | LlamaIndex | Python | RAG | Streamlit | NLP | NLTK | Pandas | PySpark | SciKit | NumPy
